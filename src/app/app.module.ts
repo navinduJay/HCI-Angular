@@ -15,6 +15,7 @@ import { ContactComponent } from "./components/contact/contact.component";
 import { HeaderComponent } from "./components/header/header.component";
 import { HomeComponent } from "./components/home/home.component";
 import { FooterComponent } from './components/footer/footer.component';
+import { SocielComponent } from './components/footer/sociel/sociel.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { FooterComponent } from './components/footer/footer.component';
     ContactComponent,
     HeaderComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    SocielComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

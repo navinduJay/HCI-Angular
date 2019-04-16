@@ -1,0 +1,10 @@
+.footer .social-icon {
+  padding: 0px;
+  margin: 0px;
+}
+.footer .social-icon a {
+  display: inline-block;
+  color: #fff;
+  font-size: 25px;
+  padding: 5px;
+}
