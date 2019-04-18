@@ -8,6 +8,8 @@ import { RegisterComponent } from "./components/auth/admin/register/register.com
 import { AboutComponent } from "./components/about/about.component";
 import { ContactComponent } from "./components/contact/contact.component";
 import { HomeComponent } from "./components/home/home.component";
+import { CregisterComponent } from "./components/auth/customer/register/cregister/cregister.component";
+import { CloginComponent } from "./components/auth/customer/login/clogin/clogin.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "/home", pathMatch: "full" },
@@ -15,7 +17,10 @@ const routes: Routes = [
   { path: "about", component: AboutComponent },
   { path: "login", component: LoginComponent },
   { path: "register", component: RegisterComponent },
-  { path: "contact", component: ContactComponent }
+  { path: "contact", component: ContactComponent },
+  { path: "admin/register", component: RegisterComponent },
+  { path: "user/register", component: CregisterComponent },
+  { path: "user/login", component: CloginComponent }
 ];
 
 @NgModule({

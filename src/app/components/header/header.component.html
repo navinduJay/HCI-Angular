@@ -35,12 +35,22 @@
       <li class="nav-item">
         <a
           class="nav-link"
+          routerLink="/user/login"
+          [class.active]="activetab === 'login'"
+          (click)="getActiveTab('login')"
+          >Login</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
           routerLink="/contact"
           [class.active]="activetab === 'contact'"
           (click)="getActiveTab('contact')"
           >Contact</a
         >
       </li>
+
       <!-- <li class="nav-item dropdown">
         <a
           class="nav-link dropdown-toggle"

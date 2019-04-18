@@ -14,8 +14,11 @@ import { AboutComponent } from "./components/about/about.component";
 import { ContactComponent } from "./components/contact/contact.component";
 import { HeaderComponent } from "./components/header/header.component";
 import { HomeComponent } from "./components/home/home.component";
-import { FooterComponent } from './components/footer/footer.component';
-import { SocielComponent } from './components/footer/sociel/sociel.component';
+import { FooterComponent } from "./components/footer/footer.component";
+import { SocielComponent } from "./components/footer/sociel/sociel.component";
+import { CregisterComponent } from "./components/auth/customer/register/cregister/cregister.component";
+import { CloginComponent } from './components/auth/customer/login/clogin/clogin.component';
+import { MapComponent } from './components/contact/map/map.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,10 @@ import { SocielComponent } from './components/footer/sociel/sociel.component';
     HeaderComponent,
     HomeComponent,
     FooterComponent,
-    SocielComponent
+    SocielComponent,
+    CregisterComponent,
+    CloginComponent,
+    MapComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
