@@ -17,9 +17,11 @@ import { HomeComponent } from "./components/home/home.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { SocielComponent } from "./components/footer/sociel/sociel.component";
 import { CregisterComponent } from "./components/auth/customer/register/cregister/cregister.component";
-import { CloginComponent } from './components/auth/customer/login/clogin/clogin.component';
-import { MapComponent } from './components/contact/map/map.component';
-import { TodoComponent } from './components/todo/todo.component';
+import { CloginComponent } from "./components/auth/customer/login/clogin/clogin.component";
+import { MapComponent } from "./components/contact/map/map.component";
+import { TodoComponent } from "./components/todo/todo.component";
+
+import { ConfigService } from "./config.service";
 
 @NgModule({
   declarations: [
@@ -42,7 +44,7 @@ import { TodoComponent } from './components/todo/todo.component';
     TodoComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
-  providers: [],
+  providers: [ConfigService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

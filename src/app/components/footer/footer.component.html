@@ -2,11 +2,9 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-3">
-        <h4 class="title">Hotel HABIBI</h4>
+        <h4 class="title">{{ footer.title }}</h4>
         <address>
-          Visit us at:<br />
-          77 Galle Rd, Colombo 00300<br />
-          Sri Lanka
+          {{ footer.address }}
         </address>
         <app-sociel></app-sociel>
       </div>
@@ -14,7 +12,7 @@
     </div>
     <hr />
     <div class="text-center">
-      © 2019 HABIBI Solutions
+      {{ footer.copyright }}
     </div>
   </div>
 </footer>

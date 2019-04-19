@@ -35,6 +35,8 @@ header h1 {
 .container .thumbex {
   margin: 10px 20px 30px;
   width: 100%;
+  border: 1px solid transparent !important;
+  border-radius: 7px;
   min-width: 250px;
   max-width: 435px;
   height: 300px;
@@ -42,9 +44,7 @@ header h1 {
   -ms-flex: 1;
   flex: 1;
   overflow: hidden;
-  outline: 2px solid white;
   outline-offset: -15px;
-  background-color: blue;
   box-shadow: 5px 10px 40px 5px rgba(0, 0, 0, 0.5);
 }
 .container .thumbex .thumbnail {
