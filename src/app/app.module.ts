@@ -19,6 +19,7 @@ import { SocielComponent } from "./components/footer/sociel/sociel.component";
 import { CregisterComponent } from "./components/auth/customer/register/cregister/cregister.component";
 import { CloginComponent } from './components/auth/customer/login/clogin/clogin.component';
 import { MapComponent } from './components/contact/map/map.component';
+import { TodoComponent } from './components/todo/todo.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { MapComponent } from './components/contact/map/map.component';
     SocielComponent,
     CregisterComponent,
     CloginComponent,
-    MapComponent
+    MapComponent,
+    TodoComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
