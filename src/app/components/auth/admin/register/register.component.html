@@ -1,3 +1,62 @@
-<p>
-  register works!
-</p>
+<div class="container register">
+  <div class="row">
+    <div class="col-md-6">
+      <h1 class="text-center">Welcome to Admin Panel</h1>
+      <h3 class="text-center">Hotel Habibi</h3>
+
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">First Name</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter firstname"
+          />
+        </div>
+        <div class="form-group">
+          <label>Last Name</label>
+          <input
+            type="email"
+            class="form-control"
+            placeholder="Enter lastname"
+          />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email</label>
+          <input type="text" class="form-control" placeholder="Enter email" />
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Enter password"
+          />
+        </div>
+        <div class="form-group">
+          <label>Confirm Password</label>
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Confirm password"
+          />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Register</button>
+        <br />
+        <br />
+        <p>Already have an account?</p>
+        <a class="rlink" routerLink="/admin/login">Login here</a>
+      </form>
+    </div>
+    <div class="col-md-5">
+      <img
+        src="../../../../../assets/images/admin_reg.svg"
+        height="300"
+        width="550px"
+        alt="picture"
+        class="adminReg"
+      />
+    </div>
+  </div>
+</div>

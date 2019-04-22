@@ -22,5 +22,15 @@ export const configuration = {
       { image: "../../../assets/images/pool.jpg", text: "Relax" },
       { image: "../../../assets/images/dine.jpg", text: "Dine" }
     ]
+  },
+  contact: {
+    title: "Contact Us",
+    text: "Write your feedback!",
+    form: {
+      name: "Full Name",
+      email: "Email",
+      comment: "Comment",
+      btn: "Submit"
+    }
   }
 };
