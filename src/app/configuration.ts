@@ -16,7 +16,7 @@ export const configuration = {
   },
 
   todo: {
-    title: "Shall we show you around?",
+    title: "Luxury at a glance!",
     environment: [
       { image: "../../../assets/images/room.jpg", text: "Stay" },
       { image: "../../../assets/images/pool.jpg", text: "Relax" },
@@ -32,5 +32,44 @@ export const configuration = {
       comment: "Comment",
       btn: "Submit"
     }
+  },
+  availability: {
+    title: "Make a reservation today!",
+    picture: "../../../assets/images/availability.svg",
+    desc:
+      "Looking for a luxury stay to spend your vacation? Then you are at the right place! Head on over to our rooms select your room as per your preference and make a reservation today!",
+    button: {
+      text: "Check Availability",
+      link: ""
+    }
+  },
+  why: {
+    title: "Why Choose Us?",
+    features: [
+      {
+        icon: "../../../assets/images/massage.svg",
+        title: "Free Jet-lag Massage",
+        desc:
+          "This is basic card with image on top, title, description and button."
+      },
+      {
+        icon: "../../../assets/images/check.svg",
+        title: "Early check-in & late check-out",
+        desc:
+          "This is basic card with image on top, title, description and button."
+      },
+      {
+        icon: "../../../assets/images/spa.png",
+        title: "25% Off SPA Treatments",
+        desc:
+          "This is basic card with image on top, title, description and button."
+      },
+      {
+        icon: "../../../assets/images/dine.svg",
+        title: "10% Off Lunch & Dinner",
+        desc:
+          "This is basic card with image on top, title, description and button."
+      }
+    ]
   }
 };

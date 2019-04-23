@@ -1,0 +1,37 @@
+<div class="site-section">
+  <div class="container">
+    <section class="fdb-block">
+      <div class="container">
+        <h1 class="text-center" data-aos="fade-up">{{ availability.title }}</h1>
+        <div class="row align-items-center">
+          <div
+            data-aos="fade-right"
+            class="col-12 ml-md-auto col-md-7 col-lg-6 pb-5 pb-md-0"
+          >
+            <p class="lead"></p>
+            <p>
+              {{ availability.desc }}
+            </p>
+
+            <p class="mt-4">
+              <a class="btn btn ml-3">{{ availability.button.text }}</a>
+            </p>
+          </div>
+
+          <div
+            data-aos="fade-left"
+            class="col-10 col-sm-6 col-md-5 col-lg-4 m-auto pb-5 pb-md-0"
+          >
+            <img
+              alt="image"
+              height="350px"
+              width="350px"
+              class="fdb-icon"
+              src="{{ availability.picture }}"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

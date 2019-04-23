@@ -24,6 +24,8 @@ import { TodoComponent } from "./components/todo/todo.component";
 import { ConfigService } from "./config.service";
 import { AdminheaderComponent } from './components/auth/admin/adminheader/adminheader.component';
 import { DetailsComponent } from './components/contact/details/details.component';
+import { CheckAvailabilityComponent } from './components/check-availability/check-availability.component';
+import { WhyUsComponent } from './components/why-us/why-us.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,9 @@ import { DetailsComponent } from './components/contact/details/details.component
     MapComponent,
     TodoComponent,
     AdminheaderComponent,
-    DetailsComponent
+    DetailsComponent,
+    CheckAvailabilityComponent,
+    WhyUsComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [ConfigService],

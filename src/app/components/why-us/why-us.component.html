@@ -1,0 +1,32 @@
+<div class="site-section">
+  <div class="box">
+    <div class="container">
+      <h1 class="text-center" data-aos="fade-up">{{ why.title }}</h1>
+      <br />
+      <br />
+      <div class="row">
+        <div
+          class="col-md-3"
+          data-aos="fade-up"
+          *ngFor="let feature of why.features"
+        >
+          <div class="card">
+            <div class="card-body text-center">
+              <p>
+                <img
+                  class=" img-fluid"
+                  src="{{ feature.icon }}"
+                  alt="card image"
+                />
+              </p>
+              <h4 class="card-title">{{ feature.title }}</h4>
+              <p class="card-text">
+                {{ feature.desc }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
