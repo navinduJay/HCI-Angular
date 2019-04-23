@@ -22,6 +22,8 @@ import { MapComponent } from "./components/contact/map/map.component";
 import { TodoComponent } from "./components/todo/todo.component";
 
 import { ConfigService } from "./config.service";
+import { AdminheaderComponent } from './components/auth/admin/adminheader/adminheader.component';
+import { DetailsComponent } from './components/contact/details/details.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { ConfigService } from "./config.service";
     CregisterComponent,
     CloginComponent,
     MapComponent,
-    TodoComponent
+    TodoComponent,
+    AdminheaderComponent,
+    DetailsComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [ConfigService],

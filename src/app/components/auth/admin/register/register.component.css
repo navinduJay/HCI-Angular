@@ -15,6 +15,7 @@ h3 {
   background: #eaf5ff;
   margin-top: 3%;
   padding: 3%;
+  border-radius: 20px;
 }
 
 .btn-primary {
@@ -28,4 +29,8 @@ h3 {
 
 .adminReg {
   margin-top: 50px;
+}
+
+.star {
+  color: red;
 }

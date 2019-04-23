@@ -1,0 +1,9 @@
+.small {
+  color: red;
+}
+
+a.active {
+  background-color: #dae1e7 !important;
+  border: 1px !important;
+  border-radius: 10px !important;
+}
