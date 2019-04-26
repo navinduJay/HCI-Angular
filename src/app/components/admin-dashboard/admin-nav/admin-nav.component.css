@@ -1,0 +1,17 @@
+.btn {
+  margin-top: 5px;
+}
+
+#navbarSupportedContent {
+  margin-top: 5px;
+}
+
+.strong {
+  color: red;
+}
+
+.profilePic {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}

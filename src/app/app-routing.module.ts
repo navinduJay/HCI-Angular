@@ -10,6 +10,7 @@ import { ContactComponent } from "./components/contact/contact.component";
 import { HomeComponent } from "./components/home/home.component";
 import { CregisterComponent } from "./components/auth/customer/register/cregister/cregister.component";
 import { CloginComponent } from "./components/auth/customer/login/clogin/clogin.component";
+import { AdminDashboardComponent } from "./components/admin-dashboard/admin-dashboard.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "/home", pathMatch: "full" },
@@ -20,7 +21,8 @@ const routes: Routes = [
   { path: "contact", component: ContactComponent },
   { path: "admin/register", component: RegisterComponent },
   { path: "user/register", component: CregisterComponent },
-  { path: "user/login", component: CloginComponent }
+  { path: "user/login", component: CloginComponent },
+  { path: "admin/dashboard", component: AdminDashboardComponent }
 ];
 
 @NgModule({

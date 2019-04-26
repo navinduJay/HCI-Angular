@@ -1,0 +1,26 @@
+<div class="box">
+  <div class="container">
+    <div class="row">
+      <div
+        class="col-lg-4 col-md-4 col-sm-4 col-xs-12"
+        *ngFor="let content of adminPanel.dashboard"
+      >
+        <div class="box-part text-center">
+          <img class="dBoardImages" src="{{ content.image }}" alt="pic" />
+
+          <div class="title">
+            <h4>{{ content.title }}</h4>
+          </div>
+
+          <div class="text">
+            <span>{{ content.desc }}</span>
+          </div>
+
+          <a class="btn btn-dark configBtn" href="#" role="button">{{
+            content.btn
+          }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

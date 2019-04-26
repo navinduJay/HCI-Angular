@@ -71,5 +71,52 @@ export const configuration = {
           "This is basic card with image on top, title, description and button."
       }
     ]
+  },
+
+  adminPanel: {
+    dashboard: [
+      {
+        image: "../../../../assets/images/conf.png",
+        title: "Hotel Configuration",
+        desc:
+          "Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.",
+        btn: "Edit"
+      },
+      {
+        image: "../../../../assets/images/bookings.svg",
+        title: "Bookings",
+        desc:
+          "Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.",
+        btn: "Edit"
+      },
+      {
+        image: "../../../../assets/images/menu.svg",
+        title: "Menus",
+        desc:
+          "Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.",
+        btn: "Edit"
+      },
+      {
+        image: "../../../../assets/images/guests.svg",
+        title: "Guests",
+        desc:
+          "Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.",
+        btn: "Edit"
+      },
+      {
+        image: "../../../../assets/images/content.svg",
+        title: "Content Management",
+        desc:
+          "Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.",
+        btn: "Edit"
+      },
+      {
+        image: "../../../../assets/images/calendar.svg",
+        title: "Availability Calendar",
+        desc:
+          "Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.",
+        btn: "Edit"
+      }
+    ]
   }
 };

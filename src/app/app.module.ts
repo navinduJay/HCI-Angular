@@ -22,10 +22,15 @@ import { MapComponent } from "./components/contact/map/map.component";
 import { TodoComponent } from "./components/todo/todo.component";
 
 import { ConfigService } from "./config.service";
-import { AdminheaderComponent } from './components/auth/admin/adminheader/adminheader.component';
-import { DetailsComponent } from './components/contact/details/details.component';
-import { CheckAvailabilityComponent } from './components/check-availability/check-availability.component';
-import { WhyUsComponent } from './components/why-us/why-us.component';
+import { AdminheaderComponent } from "./components/auth/admin/adminheader/adminheader.component";
+import { DetailsComponent } from "./components/contact/details/details.component";
+import { CheckAvailabilityComponent } from "./components/check-availability/check-availability.component";
+import { WhyUsComponent } from "./components/why-us/why-us.component";
+import { AdminDashboardComponent } from "./components/admin-dashboard/admin-dashboard.component";
+import { AdminNavComponent } from "./components/admin-dashboard/admin-nav/admin-nav.component";
+
+import { AdminContentComponent } from "./components/admin-dashboard/admin-content/admin-content.component";
+import { AdminFooterComponent } from './components/admin-dashboard/admin-footer/admin-footer.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +54,11 @@ import { WhyUsComponent } from './components/why-us/why-us.component';
     AdminheaderComponent,
     DetailsComponent,
     CheckAvailabilityComponent,
-    WhyUsComponent
+    WhyUsComponent,
+    AdminDashboardComponent,
+    AdminNavComponent,
+    AdminContentComponent,
+    AdminFooterComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [ConfigService],
