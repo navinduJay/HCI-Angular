@@ -30,7 +30,15 @@ import { AdminDashboardComponent } from "./components/admin-dashboard/admin-dash
 import { AdminNavComponent } from "./components/admin-dashboard/admin-nav/admin-nav.component";
 
 import { AdminContentComponent } from "./components/admin-dashboard/admin-content/admin-content.component";
-import { AdminFooterComponent } from './components/admin-dashboard/admin-footer/admin-footer.component';
+import { AdminFooterComponent } from "./components/admin-dashboard/admin-footer/admin-footer.component";
+import { HConfigComponent } from "./components/admin-dashboard/admin-content/h-config/h-config.component";
+import { BookingsComponent } from "./components/admin-dashboard/admin-content/bookings/bookings.component";
+import { MenusComponent } from "./components/admin-dashboard/admin-content/menus/menus.component";
+import { GuestsComponent } from "./components/admin-dashboard/admin-content/guests/guests.component";
+import { CmsComponent } from "./components/admin-dashboard/admin-content/cms/cms.component";
+import { CalendarComponent } from "./components/admin-dashboard/admin-content/calendar/calendar.component";
+import { EditProfileComponent } from "./components/auth/admin/edit-profile/edit-profile.component";
+import { UpdateComponent } from './components/auth/admin/edit-profile/update/update.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +66,15 @@ import { AdminFooterComponent } from './components/admin-dashboard/admin-footer/
     AdminDashboardComponent,
     AdminNavComponent,
     AdminContentComponent,
-    AdminFooterComponent
+    AdminFooterComponent,
+    HConfigComponent,
+    BookingsComponent,
+    MenusComponent,
+    GuestsComponent,
+    CmsComponent,
+    CalendarComponent,
+    EditProfileComponent,
+    UpdateComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [ConfigService],

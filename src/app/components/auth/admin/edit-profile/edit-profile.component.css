@@ -1,0 +1,54 @@
+/* FontAwesome for working BootSnippet :> */
+
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+#team {
+  background: white !important;
+}
+
+section {
+  padding: 10px 0;
+}
+
+section .section-title {
+  text-align: center;
+  color: #343a40;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+#team .card {
+  border: none;
+  background: #eee;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  left: 275px;
+}
+
+.frontside {
+  position: relative;
+  -webkit-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  z-index: 2;
+  margin-bottom: 30px;
+}
+
+.frontside .card,
+.backside .card {
+  min-height: 312px;
+}
+
+.backside .card a {
+  font-size: 18px;
+  color: #343a40 !important;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+  color: #343a40 !important;
+}
+
+.frontside .card .card-body img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}

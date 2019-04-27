@@ -12,6 +12,17 @@
 
 .profilePic {
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
+}
+
+#user {
+  color: white !important;
+}
+
+#dashboard:hover {
+  color: black;
+  background: white;
+  border: 1px solid transparent;
+  border-radius: 15px;
 }

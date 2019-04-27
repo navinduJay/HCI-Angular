@@ -16,9 +16,12 @@
             <span>{{ content.desc }}</span>
           </div>
 
-          <a class="btn btn-dark configBtn" href="#" role="button">{{
-            content.btn
-          }}</a>
+          <a
+            class="btn btn-dark configBtn"
+            routerLink="/admin/dashboard/{{ content.url }}"
+            role="button"
+            >{{ content.btn }}</a
+          >
         </div>
       </div>
     </div>

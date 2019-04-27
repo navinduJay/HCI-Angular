@@ -76,6 +76,7 @@ export const configuration = {
   adminPanel: {
     dashboard: [
       {
+        url: "h_config",
         image: "../../../../assets/images/conf.png",
         title: "Hotel Configuration",
         desc:
@@ -83,6 +84,7 @@ export const configuration = {
         btn: "Edit"
       },
       {
+        url: "bookings",
         image: "../../../../assets/images/bookings.svg",
         title: "Bookings",
         desc:
@@ -90,6 +92,7 @@ export const configuration = {
         btn: "Edit"
       },
       {
+        url: "menus",
         image: "../../../../assets/images/menu.svg",
         title: "Menus",
         desc:
@@ -97,6 +100,7 @@ export const configuration = {
         btn: "Edit"
       },
       {
+        url: "guests",
         image: "../../../../assets/images/guests.svg",
         title: "Guests",
         desc:
@@ -104,6 +108,7 @@ export const configuration = {
         btn: "Edit"
       },
       {
+        url: "cms",
         image: "../../../../assets/images/content.svg",
         title: "Content Management",
         desc:
@@ -111,6 +116,7 @@ export const configuration = {
         btn: "Edit"
       },
       {
+        url: "calendar",
         image: "../../../../assets/images/calendar.svg",
         title: "Availability Calendar",
         desc:
