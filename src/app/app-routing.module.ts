@@ -22,7 +22,8 @@ const routes: Routes = [
   { path: "admin/register", component: RegisterComponent },
   { path: "user/register", component: CregisterComponent },
   { path: "user/login", component: CloginComponent },
-  { path: "admin/dashboard", component: AdminDashboardComponent }
+  { path: "admin/dashboard", component: AdminDashboardComponent },
+  { path: "**", component: NotFoundComponent }
 ];
 
 @NgModule({
