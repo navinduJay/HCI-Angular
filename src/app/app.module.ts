@@ -39,6 +39,7 @@ import { CmsComponent } from "./components/admin-dashboard/admin-content/cms/cms
 import { CalendarComponent } from "./components/admin-dashboard/admin-content/calendar/calendar.component";
 import { EditProfileComponent } from "./components/auth/admin/edit-profile/edit-profile.component";
 import { UpdateComponent } from './components/auth/admin/edit-profile/update/update.component';
+import { ReserveComponent } from './components/corousel/reserve/reserve.component';
 
 @NgModule({
   declarations: [
@@ -74,7 +75,8 @@ import { UpdateComponent } from './components/auth/admin/edit-profile/update/upd
     CmsComponent,
     CalendarComponent,
     EditProfileComponent,
-    UpdateComponent
+    UpdateComponent,
+    ReserveComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [ConfigService],

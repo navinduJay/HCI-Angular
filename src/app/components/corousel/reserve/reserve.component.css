@@ -1,0 +1,99 @@
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #ddd;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+  background-color: #f3f3f3;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+  font: 15px "Segoe UI", Arial, sans-serif;
+  background-color: #eaebe5;
+  height: auto;
+  padding: 10px;
+  color: #7e8c8d;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+/*___________________________________*/
+.container {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+
+  -moz-perspective: 800px;
+  -webkit-perspective: 800px;
+  perspective: 800px;
+}
+
+.container form {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 10px;
+  left: 580px;
+
+  border: 1px solid transparent;
+  border-radius: 10px;
+
+  /* Enabling 3d space for the transforms */
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+
+  /* When the forms are flipped, they will be hidden */
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  /* Enabling a smooth animated transition */
+  -moz-transition: 0.8s;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.form-signin {
+  z-index: 100;
+}
+
+#login {
+  background: #f3f3f3;
+  z-index: 100;
+}
+
+.icons {
+  height: 40px;
+  width: 40px;
+}
+
+.btn-info {
+  background-color: #df0054;
+}
