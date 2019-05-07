@@ -1,77 +1,101 @@
-<div class="container animated bounceInRight">
-  <div class="row">
-    <div class="container" id="formContainer">
-      <form class="form-signin " id="login" role="form">
-        <h3 class="form-signin-heading">Make Reservation</h3>
-        <a href="#" id="flipToRecover" class="flipLink">
-          <div id="triangle-topright"></div>
-        </a>
-        <div class="input-group date">
-          <select class="form-control" name="" id="">
-            <option value="">Room</option>
-            <option value="">Hall</option>
-          </select>
-          <div class="input-group-addon">
-            <img
-              src="../../../assets/images/confbed.svg"
-              class="icons"
-              alt=""
-            />
+<section class="section bg-light pb-0">
+  <div class="container">
+    <div class="row check-availabilty" id="next">
+      <div class="block-32" data-aos="fade-up" data-aos-offset="-200">
+        <form action="#">
+          <div class="row">
+            <div class="col-md-2 mb-3 mb-lg-0 col-sm-3">
+              <label for="checkin_date" class="font-weight-bold text-black"
+                >Check In</label
+              >
+              <div class="field-icon-wrap">
+                <div class="icon">
+                  <img
+                    src="../../../../assets/images/bed.svg"
+                    alt=""
+                    class="icons"
+                  />
+                </div>
+                <select class="form-control form-control-md">
+                  <option>Room</option>
+                  <option>Hall</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-2 mb-3 mb-lg-0 col-sm-3">
+              <label for="checkin_date" class="font-weight-bold text-black"
+                >Check In</label
+              >
+              <div class="field-icon-wrap">
+                <div class="icon">
+                  <img
+                    src="../../../../assets/images/calendar.svg"
+                    alt=""
+                    class="icons"
+                  />
+                </div>
+                <input type="date" id="checkin_date" class="form-control" />
+              </div>
+            </div>
+            <div class="col-md-2 mb-3 mb-sm-0 col-sm-3">
+              <label for="checkout_date" class="font-weight-bold text-black"
+                >Check Out</label
+              >
+              <div class="field-icon-wrap">
+                <div class="icon">
+                  <img
+                    src="../../../../assets/images/calendar.svg"
+                    alt=""
+                    class="icons"
+                  />
+                </div>
+                <input type="date" id="checkout_date" class="form-control" />
+              </div>
+            </div>
+            <div class="col-md-2 mb-3 mb-md-0 col-lg-3">
+              <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                  <label for="adults" class="font-weight-bold text-black"
+                    >Adults</label
+                  >
+                  <div class="field-icon-wrap">
+                    <div class="icon">
+                      <span class="ion-ios-arrow-down"></span>
+                    </div>
+                    <select name="" id="adults" class="form-control">
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                      <option value="">4+</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                  <label for="children" class="font-weight-bold text-black"
+                    >Children</label
+                  >
+                  <div class="field-icon-wrap">
+                    <div class="icon">
+                      <span class="ion-ios-arrow-down"></span>
+                    </div>
+                    <select name="" id="children" class="form-control">
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                      <option value="">4+</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 align-self-end">
+              <button class="btn btn-dark btn-block text-white">
+                Check Availabilty
+              </button>
+            </div>
           </div>
-        </div>
-        <br />
-        <div class="input-group date" data-provide="datepicker">
-          <input type="text" placeholder="Check in" class="form-control" />
-          <div class="input-group-addon">
-            <img
-              src="../../../assets/images/calendar.svg"
-              class="icons"
-              alt=""
-            />
-          </div>
-        </div>
-        <br />
-        <div class="input-group date" data-provide="datepicker">
-          <input type="text" placeholder="Check out" class="form-control" />
-          <div class="input-group-addon">
-            <img
-              src="../../../assets/images/calendar.svg"
-              class="icons"
-              alt=""
-            />
-          </div>
-        </div>
-        <br />
-        <div class="input-group date">
-          <select class="form-control" name="" id="">
-            <option value="">Adults</option>
-            <option value="">1</option>
-            <option value="">2</option>
-            <option value="">3</option>
-          </select>
-          <div class="input-group-addon">
-            <img src="../../../assets/images/adukt.svg" class="icons" alt="" />
-          </div>
-        </div>
-        <br />
-        <div class="input-group date">
-          <select class="form-control" name="" id="">
-            <option value="">Children</option>
-            <option value="">1</option>
-            <option value="">2</option>
-            <option value="">3</option>
-          </select>
-          <div class="input-group-addon">
-            <img src="../../../assets/images/baby.svg" class="icons" alt="" />
-          </div>
-        </div>
-        <br />
-
-        <button class="btn btn-lg btn-info btn-block" type="submit">
-          Search
-        </button>
-      </form>
+        </form>
+      </div>
     </div>
-    <!-- /container -->
   </div>
-</div>
+</section>

@@ -38,9 +38,10 @@ import { GuestsComponent } from "./components/admin-dashboard/admin-content/gues
 import { CmsComponent } from "./components/admin-dashboard/admin-content/cms/cms.component";
 import { CalendarComponent } from "./components/admin-dashboard/admin-content/calendar/calendar.component";
 import { EditProfileComponent } from "./components/auth/admin/edit-profile/edit-profile.component";
-import { UpdateComponent } from './components/auth/admin/edit-profile/update/update.component';
-import { ReserveComponent } from './components/corousel/reserve/reserve.component';
-
+import { UpdateComponent } from "./components/auth/admin/edit-profile/update/update.component";
+import { ReserveComponent } from "./components/corousel/reserve/reserve.component";
+import { RoomTypesComponent } from "./components/admin-dashboard/admin-content/h-config/room-types/room-types.component";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 @NgModule({
   declarations: [
     AppComponent,
@@ -76,9 +77,10 @@ import { ReserveComponent } from './components/corousel/reserve/reserve.componen
     CalendarComponent,
     EditProfileComponent,
     UpdateComponent,
-    ReserveComponent
+    ReserveComponent,
+    RoomTypesComponent
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [ConfigService],
   bootstrap: [AppComponent]
 })

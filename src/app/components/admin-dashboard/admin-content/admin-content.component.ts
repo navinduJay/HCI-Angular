@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from "@angular/core";
-import { ConfigService } from "src/app/config.service";
+import { ConfigService } from "../../../config.service";
 
 @Component({
   selector: "app-admin-content",

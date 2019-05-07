@@ -19,9 +19,10 @@ import { CmsComponent } from "./components/admin-dashboard/admin-content/cms/cms
 import { CalendarComponent } from "./components/admin-dashboard/admin-content/calendar/calendar.component";
 import { EditProfileComponent } from "./components/auth/admin/edit-profile/edit-profile.component";
 import { UpdateComponent } from "./components/auth/admin/edit-profile/update/update.component";
+import { RoomTypesComponent } from "./components/admin-dashboard/admin-content/h-config/room-types/room-types.component";
 
 const routes: Routes = [
-  { path: "", redirectTo: "/home", pathMatch: "full" },
+  { path: "", redirectTo: "home", pathMatch: "full" },
   { path: "home", component: HomeComponent },
   { path: "about", component: AboutComponent },
   { path: "admin/login", component: LoginComponent },
@@ -31,14 +32,32 @@ const routes: Routes = [
   { path: "user/register", component: CregisterComponent },
   { path: "user/login", component: CloginComponent },
   { path: "admin/edit_profile", component: EditProfileComponent },
-  { path: "admin/dashboard", component: AdminDashboardComponent },
-  { path: "admin/dashboard/h_config", component: HConfigComponent },
+  {
+    path: "admin/dashboard",
+    component: AdminDashboardComponent,
+    data: { animation: "isLeft" }
+  },
+  {
+    path: "admin/dashboard/h_config",
+    component: HConfigComponent,
+    data: { animation: "isRight" }
+  },
+  {
+    path: "admin/dashboard/h_config/room_types",
+    component: RoomTypesComponent,
+    data: { animation: "isRight" }
+  },
+
   { path: "admin/dashboard/bookings", component: BookingsComponent },
   { path: "admin/dashboard/menus", component: MenusComponent },
   { path: "admin/dashboard/guests", component: GuestsComponent },
   { path: "admin/dashboard/cms", component: CmsComponent },
   { path: "admin/dashboard/calendar", component: CalendarComponent },
-  { path: "admin/update", component: UpdateComponent },
+  {
+    path: "admin/update",
+    component: UpdateComponent,
+    data: { animation: "isRight" }
+  },
 
   { path: "**", component: NotFoundComponent }
 ];
