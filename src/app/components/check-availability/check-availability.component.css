@@ -1,8 +1,13 @@
 .btn {
   color: white !important;
-  background-color: #df0054 !important;
+  /* background-color: #df0054; */
 }
 
 h1 {
   color: #252776;
+}
+
+
+#checkBtn{
+  background-color: #252776 !important;
 }

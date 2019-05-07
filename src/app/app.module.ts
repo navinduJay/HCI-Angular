@@ -42,6 +42,7 @@ import { UpdateComponent } from "./components/auth/admin/edit-profile/update/upd
 import { ReserveComponent } from "./components/corousel/reserve/reserve.component";
 import { RoomTypesComponent } from "./components/admin-dashboard/admin-content/h-config/room-types/room-types.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { RoomListComponent } from './components/reservation/room-list/room-list.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -78,7 +79,8 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
     EditProfileComponent,
     UpdateComponent,
     ReserveComponent,
-    RoomTypesComponent
+    RoomTypesComponent,
+    RoomListComponent
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [ConfigService],

@@ -20,6 +20,7 @@ import { CalendarComponent } from "./components/admin-dashboard/admin-content/ca
 import { EditProfileComponent } from "./components/auth/admin/edit-profile/edit-profile.component";
 import { UpdateComponent } from "./components/auth/admin/edit-profile/update/update.component";
 import { RoomTypesComponent } from "./components/admin-dashboard/admin-content/h-config/room-types/room-types.component";
+import { RoomListComponent } from './components/reservation/room-list/room-list.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
@@ -58,6 +59,7 @@ const routes: Routes = [
     component: UpdateComponent,
     data: { animation: "isRight" }
   },
+  { path: "user/reservation/room-list", component: RoomListComponent },
 
   { path: "**", component: NotFoundComponent }
 ];

@@ -12,6 +12,13 @@ export class CheckAvailabilityComponent implements OnInit {
 
   ngOnInit() {
     this.availability = this.getAvailability();
+
+    document.getElementById('checkBtn').addEventListener('click', sayHello);
+
+    function sayHello() {
+      alert('hello world');
+    }
+
   }
 
   getAvailability() {
