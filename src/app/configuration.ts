@@ -18,7 +18,7 @@ export const configuration = {
   todo: {
     title: "Luxury at a glance!",
     environment: [
-      { image: "../../../assets/images/room.jpg", text: "Stay" },
+      { image: "../../../assets/images/room1.jpg", text: "Stay" },
       { image: "../../../assets/images/pool.jpg", text: "Relax" },
       { image: "../../../assets/images/dine.jpg", text: "Dine" }
     ]
