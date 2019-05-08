@@ -1,6 +1,7 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
-
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { MaterialModule } from "./material";
 import { AppComponent } from "./app.component";
 import { CorouselComponent } from "./components/corousel/corousel.component";
 import { RoomsComponent } from "./components/rooms/rooms.component";
@@ -41,9 +42,15 @@ import { EditProfileComponent } from "./components/auth/admin/edit-profile/edit-
 import { UpdateComponent } from "./components/auth/admin/edit-profile/update/update.component";
 import { ReserveComponent } from "./components/corousel/reserve/reserve.component";
 import { RoomTypesComponent } from "./components/admin-dashboard/admin-content/h-config/room-types/room-types.component";
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { RoomListComponent } from './components/reservation/room-list/room-list.component';
-import { RoomDescriptionComponent } from './components/reservation/room-description/room-description.component';
+
+import { RoomListComponent } from "./components/reservation/room-list/room-list.component";
+import { RoomDescriptionComponent } from "./components/reservation/room-description/room-description.component";
+import { AmenitiesComponent } from "./components/admin-dashboard/admin-content/h-config/amenities/amenities.component";
+import { AdminRoomsComponent } from './components/admin-dashboard/admin-content/h-config/admin-rooms/admin-rooms.component';
+import { AnalyticsComponent } from './components/admin-dashboard/admin-content/analytics/analytics.component';
+import { SearchComponent } from './components/admin-dashboard/admin-content/search/search.component';
+import { HousekeepingComponent } from './components/admin-dashboard/admin-content/h-config/housekeeping/housekeeping.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -82,9 +89,19 @@ import { RoomDescriptionComponent } from './components/reservation/room-descript
     ReserveComponent,
     RoomTypesComponent,
     RoomListComponent,
-    RoomDescriptionComponent
+    RoomDescriptionComponent,
+    AmenitiesComponent,
+    AdminRoomsComponent,
+    AnalyticsComponent,
+    SearchComponent,
+    HousekeepingComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    MaterialModule
+  ],
   providers: [ConfigService],
   bootstrap: [AppComponent]
 })

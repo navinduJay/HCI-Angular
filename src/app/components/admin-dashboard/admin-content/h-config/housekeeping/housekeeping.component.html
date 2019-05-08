@@ -1,0 +1,332 @@
+<app-admin-nav></app-admin-nav>
+
+<div class="box">
+  <div class="container">
+    <h4>
+      <br /><br />
+      <app-search></app-search>
+
+      <br />
+      <small> <a routerLink="/admin/dashboard">Dashboard</a> </small> /
+      <small>
+        <a routerLink="/admin/dashboard/h_config">Hotel Configuration</a>
+      </small>
+      /
+      <strong>Housekeeping</strong>
+
+      <button
+        type="button"
+        data-toggle="modal"
+        class="btn btn-dark float-right"
+        data-target="#addHK"
+      >
+        + ADD
+      </button>
+
+      <div class="modal fade" id="addHK" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3>Add housekeeping</h3>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <mat-form-field>
+                  <mat-label>Status</mat-label>
+                  <select matNativeControl required>
+                    <option value="standard">Clean</option>
+                    <option value="executive">Dirty</option>
+                    <option value="honeymoonS">Need to be clean again</option>
+                  </select>
+                </mat-form-field>
+                <div class="form-group">
+                  <mat-form-field>
+                    <input matInput placeholder="Assignee*" />
+                  </mat-form-field>
+                  <br />
+                </div>
+                <div class="form-group">
+                  <mat-form-field>
+                    <textarea matInput placeholder="Remark"></textarea>
+                  </mat-form-field>
+
+                  <br />
+                </div>
+                <br />
+                <button
+                  type="button"
+                  class="btn btn-dark float-right"
+                  style="width: 75px"
+                  id="addAmenities"
+                >
+                  ADD
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="addHK" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3>Add a Room</h3>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Room Number" value="" />
+                  </mat-form-field>
+                  <br />
+                </div>
+
+                <mat-form-field>
+                  <mat-label>Room Type</mat-label>
+                  <select matNativeControl required>
+                    <option value="standard">Standard</option>
+                    <option value="executive">Executive</option>
+                    <option value="honeymoonS">Honeymoon Special</option>
+                    <option value="deluxe">Deluxe</option>
+                  </select>
+                </mat-form-field>
+                <br />
+                <button
+                  type="button"
+                  class="btn btn-dark float-right"
+                  style="width: 75px"
+                  id="addAmenities"
+                >
+                  ADD
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="clean" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div id="hkModel" class="modal-content">
+            <div class="modal-header">
+              <h3>Housekeeping</h3>
+
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <table class="table table-dark">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Room No</th>
+                    <th scope="col">Room Type</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Assignee</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>1</td>
+                    <td>Standard</td>
+                    <td>Clean</td>
+                    <td>Ravindu</td>
+                  </tr>
+                  <!-- <tr>
+                    <th scope="row">1</th>
+                    <td>1</td>
+                    <td>Standard</td>
+                    <td>Clean</td>
+                    <td>Navindu</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>1</td>
+                    <td>Executive</td>
+                    <td>Clean</td>
+                    <td>Anupama</td>
+                  </tr> -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="edit" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3>Edit a Room</h3>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <mat-form-field>
+                  <mat-label>Room Type</mat-label>
+                  <select matNativeControl required>
+                    <option value="standard">Standard</option>
+                    <option value="executive">Executive</option>
+                    <option value="honeymoonS">Honeymoon Special</option>
+                    <option value="deluxe">Deluxe</option>
+                  </select>
+                </mat-form-field>
+                <br />
+                <label>Room Number<small class="req">*</small></label>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      id="roomNo"
+                      value=""
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+
+                <button
+                  type="button"
+                  class="btn btn-dark float-right"
+                  style="width: 75px"
+                  id="editBtn"
+                >
+                  EDIT
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Model End here-->
+    </h4>
+    <br />
+    <div class="row">
+      <div class="col-md-12">
+        <div class="table-responsive">
+          <table id="mytable" class="table table-bordred table-striped">
+            <thead>
+              <th>#</th>
+              <th>Room Number</th>
+              <th>Room Type</th>
+              <th>Housekeeping Status</th>
+              <th>Asignee</th>
+              <th>Edit</th>
+              <th>Delete</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>Standard</td>
+                <td>
+                  Clean
+                </td>
+                <td>Ravindu</td>
+                <td>
+                  <p data-placement="top" data-toggle="tooltip" title="Edit">
+                    <button
+                      class="btn btn-light btn-xs"
+                      data-title="Edit"
+                      data-toggle="modal"
+                      data-target="#edit"
+                      id="dr"
+                    >
+                      <img
+                        src="../../../../../../assets/images/edit.svg"
+                        alt=""
+                        width="50px"
+                        height="50px"
+                      />
+                    </button>
+                  </p>
+                </td>
+                <td>
+                  <p data-placement="top" data-toggle="tooltip" title="Delete">
+                    <button
+                      class="btn btn-light btn-xs deleteHS"
+                      data-title="Delete"
+                      data-toggle="modal"
+                      data-target="#delete"
+                    >
+                      <img
+                        src="../../../../../../assets/images/bin.svg"
+                        alt=""
+                        width="50px"
+                        height="50px"
+                      />
+                    </button>
+                  </p>
+                </td>
+              </tr>
+
+              <tr>
+                <td>2</td>
+                <td>2</td>
+                <td>Standard</td>
+
+                <td>
+                  Dirty
+                </td>
+                <td>
+                  Anupama
+                </td>
+                <td>
+                  <p data-placement="top" data-toggle="tooltip" title="Edit">
+                    <button
+                      class="btn btn-light btn-xs"
+                      data-title="Edit"
+                      data-toggle="modal"
+                      data-target="#edit"
+                      id="dr"
+                    >
+                      <img
+                        src="../../../../../../assets/images/edit.svg"
+                        alt=""
+                        width="50px"
+                        height="50px"
+                      />
+                    </button>
+                  </p>
+                </td>
+                <td>
+                  <p data-placement="top" data-toggle="tooltip" title="Delete">
+                    <button
+                      class="btn btn-light btn-xs deleteHS"
+                      data-title="Delete"
+                      data-toggle="modal"
+                      data-target="#delete"
+                    >
+                      <img
+                        src="../../../../../../assets/images/bin.svg"
+                        alt=""
+                        width="50px"
+                        height="50px"
+                      />
+                    </button>
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

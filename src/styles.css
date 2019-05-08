@@ -1,4 +1,5 @@
 /* Base */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 body {
   line-height: 1.7;
   background: white !important;

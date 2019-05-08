@@ -7,6 +7,10 @@ import swal from "sweetalert";
   styleUrls: ["./room-types.component.css"]
 })
 export class RoomTypesComponent implements OnInit {
+  checked = false;
+  indeterminate = false;
+  labelPosition = "after";
+  disabled = false;
   constructor() {}
 
   ngOnInit() {

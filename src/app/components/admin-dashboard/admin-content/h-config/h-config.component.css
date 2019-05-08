@@ -6,7 +6,7 @@ span {
 }
 a {
   text-decoration: none;
-  color:white !important;
+  color: white !important;
 }
 .box {
   padding: 60px 0px;
@@ -38,4 +38,8 @@ a {
 
 .configBtn {
   width: 100px !important;
+}
+
+#dbLink {
+  color: blue !important;
 }

@@ -20,8 +20,12 @@ import { CalendarComponent } from "./components/admin-dashboard/admin-content/ca
 import { EditProfileComponent } from "./components/auth/admin/edit-profile/edit-profile.component";
 import { UpdateComponent } from "./components/auth/admin/edit-profile/update/update.component";
 import { RoomTypesComponent } from "./components/admin-dashboard/admin-content/h-config/room-types/room-types.component";
-import { RoomListComponent } from './components/reservation/room-list/room-list.component';
-import { RoomDescriptionComponent } from './components/reservation/room-description/room-description.component';
+import { RoomListComponent } from "./components/reservation/room-list/room-list.component";
+import { RoomDescriptionComponent } from "./components/reservation/room-description/room-description.component";
+import { AmenitiesComponent } from "./components/admin-dashboard/admin-content/h-config/amenities/amenities.component";
+import { RoomsComponent } from "./components/rooms/rooms.component";
+import { AdminRoomsComponent } from "./components/admin-dashboard/admin-content/h-config/admin-rooms/admin-rooms.component";
+import { HousekeepingComponent } from "./components/admin-dashboard/admin-content/h-config/housekeeping/housekeeping.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
@@ -61,7 +65,25 @@ const routes: Routes = [
     data: { animation: "isRight" }
   },
   { path: "user/reservation/room-list", component: RoomListComponent },
-  { path: "user/reservation/room-list/desc", component: RoomDescriptionComponent },
+  {
+    path: "user/reservation/room-list/desc",
+    component: RoomDescriptionComponent
+  },
+  {
+    path: "admin/dashboard/h_config/amenities",
+    component: AmenitiesComponent,
+    data: { animation: "isRight" }
+  },
+  {
+    path: "admin/dashboard/h_config/rooms",
+    component: AdminRoomsComponent,
+    data: { animation: "isRight" }
+  },
+  {
+    path: "admin/dashboard/h_config/housekeeping",
+    component: HousekeepingComponent,
+    data: { animation: "isRight" }
+  },
 
   { path: "**", component: NotFoundComponent }
 ];
