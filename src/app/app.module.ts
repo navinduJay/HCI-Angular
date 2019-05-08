@@ -50,6 +50,7 @@ import { AdminRoomsComponent } from './components/admin-dashboard/admin-content/
 import { AnalyticsComponent } from './components/admin-dashboard/admin-content/analytics/analytics.component';
 import { SearchComponent } from './components/admin-dashboard/admin-content/search/search.component';
 import { HousekeepingComponent } from './components/admin-dashboard/admin-content/h-config/housekeeping/housekeeping.component';
+import { HallTypesComponent } from './components/admin-dashboard/admin-content/h-config/hall-types/hall-types.component';
 
 @NgModule({
   declarations: [
@@ -94,7 +95,8 @@ import { HousekeepingComponent } from './components/admin-dashboard/admin-conten
     AdminRoomsComponent,
     AnalyticsComponent,
     SearchComponent,
-    HousekeepingComponent
+    HousekeepingComponent,
+    HallTypesComponent
   ],
   imports: [
     BrowserModule,

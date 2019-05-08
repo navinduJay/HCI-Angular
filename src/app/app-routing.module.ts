@@ -26,6 +26,7 @@ import { AmenitiesComponent } from "./components/admin-dashboard/admin-content/h
 import { RoomsComponent } from "./components/rooms/rooms.component";
 import { AdminRoomsComponent } from "./components/admin-dashboard/admin-content/h-config/admin-rooms/admin-rooms.component";
 import { HousekeepingComponent } from "./components/admin-dashboard/admin-content/h-config/housekeeping/housekeeping.component";
+import { HallTypesComponent } from "./components/admin-dashboard/admin-content/h-config/hall-types/hall-types.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
@@ -83,6 +84,11 @@ const routes: Routes = [
     path: "admin/dashboard/h_config/housekeeping",
     component: HousekeepingComponent,
     data: { animation: "isRight" }
+  },
+  {
+    path: "admin/dashboard/h_config/hall_types",
+    component: HallTypesComponent,
+    data: { animation: "isLeft" }
   },
 
   { path: "**", component: NotFoundComponent }
