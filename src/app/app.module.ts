@@ -43,6 +43,7 @@ import { ReserveComponent } from "./components/corousel/reserve/reserve.componen
 import { RoomTypesComponent } from "./components/admin-dashboard/admin-content/h-config/room-types/room-types.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { RoomListComponent } from './components/reservation/room-list/room-list.component';
+import { RoomDescriptionComponent } from './components/reservation/room-description/room-description.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -80,7 +81,8 @@ import { RoomListComponent } from './components/reservation/room-list/room-list.
     UpdateComponent,
     ReserveComponent,
     RoomTypesComponent,
-    RoomListComponent
+    RoomListComponent,
+    RoomDescriptionComponent
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [ConfigService],

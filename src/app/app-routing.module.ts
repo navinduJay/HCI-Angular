@@ -21,6 +21,7 @@ import { EditProfileComponent } from "./components/auth/admin/edit-profile/edit-
 import { UpdateComponent } from "./components/auth/admin/edit-profile/update/update.component";
 import { RoomTypesComponent } from "./components/admin-dashboard/admin-content/h-config/room-types/room-types.component";
 import { RoomListComponent } from './components/reservation/room-list/room-list.component';
+import { RoomDescriptionComponent } from './components/reservation/room-description/room-description.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
@@ -60,6 +61,7 @@ const routes: Routes = [
     data: { animation: "isRight" }
   },
   { path: "user/reservation/room-list", component: RoomListComponent },
+  { path: "user/reservation/room-list/desc", component: RoomDescriptionComponent },
 
   { path: "**", component: NotFoundComponent }
 ];
