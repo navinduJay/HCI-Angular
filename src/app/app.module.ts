@@ -51,6 +51,8 @@ import { AnalyticsComponent } from './components/admin-dashboard/admin-content/a
 import { SearchComponent } from './components/admin-dashboard/admin-content/search/search.component';
 import { HousekeepingComponent } from './components/admin-dashboard/admin-content/h-config/housekeeping/housekeeping.component';
 import { HallTypesComponent } from './components/admin-dashboard/admin-content/h-config/hall-types/hall-types.component';
+import { HallsComponent } from './components/admin-dashboard/admin-content/h-config/halls/halls.component';
+import { HallsAnalyticsComponent } from './components/admin-dashboard/admin-content/analytics/halls-analytics/halls-analytics.component';
 
 @NgModule({
   declarations: [
@@ -96,7 +98,9 @@ import { HallTypesComponent } from './components/admin-dashboard/admin-content/h
     AnalyticsComponent,
     SearchComponent,
     HousekeepingComponent,
-    HallTypesComponent
+    HallTypesComponent,
+    HallsComponent,
+    HallsAnalyticsComponent
   ],
   imports: [
     BrowserModule,

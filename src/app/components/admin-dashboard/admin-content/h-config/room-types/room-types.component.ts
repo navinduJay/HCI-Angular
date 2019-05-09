@@ -22,24 +22,35 @@ export class RoomTypesComponent implements OnInit {
     document.getElementById("addRooms").addEventListener("click", addRooms);
     document.querySelector(".deleteHS").addEventListener("click", deleteHS);
     function Deluxe() {
-      document.getElementById("roomType").value = "Deluxe Room";
-      document.getElementById("roomCode").value = "DR";
-      document.getElementById("desc").value = "This is a Deluxe room";
+      (<HTMLInputElement>document.getElementById("roomType")).value =
+        "Deluxe Room";
+      (<HTMLInputElement>document.getElementById("roomCode")).value = "DR";
+      (<HTMLInputElement>document.getElementById("desc")).value =
+        "This is a Deluxe room";
     }
     function Executive() {
-      document.getElementById("roomType").value = "Executive Room";
-      document.getElementById("roomCode").value = "ER";
-      document.getElementById("desc").value = "This is a Executive room";
+      (<HTMLInputElement>document.getElementById("roomType")).value =
+        "Executive Room";
+      (<HTMLInputElement>document.getElementById("roomCode")).value = "ER";
+
+      (<HTMLInputElement>document.getElementById("desc")).value =
+        "This is a Executive room";
     }
     function Standard() {
-      document.getElementById("roomType").value = "Standard Room";
-      document.getElementById("roomCode").value = "SR";
-      document.getElementById("desc").value = "This is a Standard room";
+      (<HTMLInputElement>document.getElementById("roomType")).value =
+        "Standard Room";
+      (<HTMLInputElement>document.getElementById("roomCode")).value = "SR";
+
+      (<HTMLInputElement>document.getElementById("desc")).value =
+        "This is a Standard room";
     }
     function Honeymoon() {
-      document.getElementById("roomType").value = "Honeymoon Special Room";
-      document.getElementById("roomCode").value = "HS";
-      document.getElementById("desc").value = "This is a Honeymoon Specialroom";
+      (<HTMLInputElement>document.getElementById("roomType")).value =
+        "Honeymoon Special Room";
+      (<HTMLInputElement>document.getElementById("roomCode")).value = "HS";
+
+      (<HTMLInputElement>document.getElementById("desc")).value =
+        "This is a Honeymoon Special room";
     }
     function editSignal() {
       swal("Details saved successfully!", "", "success");

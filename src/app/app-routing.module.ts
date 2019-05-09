@@ -27,6 +27,7 @@ import { RoomsComponent } from "./components/rooms/rooms.component";
 import { AdminRoomsComponent } from "./components/admin-dashboard/admin-content/h-config/admin-rooms/admin-rooms.component";
 import { HousekeepingComponent } from "./components/admin-dashboard/admin-content/h-config/housekeeping/housekeeping.component";
 import { HallTypesComponent } from "./components/admin-dashboard/admin-content/h-config/hall-types/hall-types.component";
+import { HallsComponent } from "./components/admin-dashboard/admin-content/h-config/halls/halls.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
@@ -52,7 +53,7 @@ const routes: Routes = [
   {
     path: "admin/dashboard/h_config/room_types",
     component: RoomTypesComponent,
-    data: { animation: "isRight" }
+    data: { animation: "isLeft" }
   },
 
   { path: "admin/dashboard/bookings", component: BookingsComponent },
@@ -73,21 +74,26 @@ const routes: Routes = [
   {
     path: "admin/dashboard/h_config/amenities",
     component: AmenitiesComponent,
-    data: { animation: "isRight" }
+    data: { animation: "isLeft" }
   },
   {
     path: "admin/dashboard/h_config/rooms",
     component: AdminRoomsComponent,
-    data: { animation: "isRight" }
+    data: { animation: "isLeft" }
   },
   {
     path: "admin/dashboard/h_config/housekeeping",
     component: HousekeepingComponent,
-    data: { animation: "isRight" }
+    data: { animation: "isLeft" }
   },
   {
     path: "admin/dashboard/h_config/hall_types",
     component: HallTypesComponent,
+    data: { animation: "isLeft" }
+  },
+  {
+    path: "admin/dashboard/h_config/hall",
+    component: HallsComponent,
     data: { animation: "isLeft" }
   },
 
