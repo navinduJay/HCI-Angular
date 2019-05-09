@@ -46,13 +46,16 @@ import { RoomTypesComponent } from "./components/admin-dashboard/admin-content/h
 import { RoomListComponent } from "./components/reservation/room-list/room-list.component";
 import { RoomDescriptionComponent } from "./components/reservation/room-description/room-description.component";
 import { AmenitiesComponent } from "./components/admin-dashboard/admin-content/h-config/amenities/amenities.component";
-import { AdminRoomsComponent } from './components/admin-dashboard/admin-content/h-config/admin-rooms/admin-rooms.component';
-import { AnalyticsComponent } from './components/admin-dashboard/admin-content/analytics/analytics.component';
-import { SearchComponent } from './components/admin-dashboard/admin-content/search/search.component';
-import { HousekeepingComponent } from './components/admin-dashboard/admin-content/h-config/housekeeping/housekeeping.component';
-import { HallTypesComponent } from './components/admin-dashboard/admin-content/h-config/hall-types/hall-types.component';
-import { HallsComponent } from './components/admin-dashboard/admin-content/h-config/halls/halls.component';
-import { HallsAnalyticsComponent } from './components/admin-dashboard/admin-content/analytics/halls-analytics/halls-analytics.component';
+import { AdminRoomsComponent } from "./components/admin-dashboard/admin-content/h-config/admin-rooms/admin-rooms.component";
+import { AnalyticsComponent } from "./components/admin-dashboard/admin-content/analytics/analytics.component";
+import { SearchComponent } from "./components/admin-dashboard/admin-content/search/search.component";
+import { HousekeepingComponent } from "./components/admin-dashboard/admin-content/h-config/housekeeping/housekeeping.component";
+import { HallTypesComponent } from "./components/admin-dashboard/admin-content/h-config/hall-types/hall-types.component";
+import { HallsComponent } from "./components/admin-dashboard/admin-content/h-config/halls/halls.component";
+import { HallsAnalyticsComponent } from "./components/admin-dashboard/admin-content/analytics/halls-analytics/halls-analytics.component";
+
+import { HousekeepingMenuComponent } from "./components/admin-dashboard/admin-content/h-config/housekeeping/housekeeping-menu/housekeeping-menu.component";
+import { HousekeeingHallsComponent } from './components/admin-dashboard/admin-content/h-config/housekeeping/housekeeping_menu/housekeeing-halls/housekeeing-halls.component';
 
 @NgModule({
   declarations: [
@@ -100,7 +103,9 @@ import { HallsAnalyticsComponent } from './components/admin-dashboard/admin-cont
     HousekeepingComponent,
     HallTypesComponent,
     HallsComponent,
-    HallsAnalyticsComponent
+    HallsAnalyticsComponent,
+    HousekeepingMenuComponent,
+    HousekeeingHallsComponent
   ],
   imports: [
     BrowserModule,
