@@ -64,7 +64,7 @@ export class RoomTypesComponent implements OnInit {
         text:
           "Once deleted, you will not be able to recover this imaginary file!",
         icon: "warning",
-        buttons: true,
+        buttons: { cancel: true, confirm: true },
         dangerMode: true
       }).then(willDelete => {
         if (willDelete) {

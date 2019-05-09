@@ -29,11 +29,11 @@ export class AmenitiesComponent implements OnInit {
         text:
           "Once deleted, you will not be able to recover this imaginary file!",
         icon: "warning",
-        buttons: true,
+        buttons: { cancel: true, confirm: true },
         dangerMode: true
       }).then(willDelete => {
         if (willDelete) {
-          swal("Successfully deleted! ", {
+          swal("Poof! Your imaginary file has been deleted!", {
             icon: "success"
           });
         }

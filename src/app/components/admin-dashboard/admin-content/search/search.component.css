@@ -1,5 +1,5 @@
 .searchbar {
-  height: 60px;
+  height: 50px;
   background-color: #353b48;
   border-radius: 30px;
   padding: 10px;
@@ -29,8 +29,8 @@
 }
 
 .search_icon {
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   float: right;
   display: flex;
   justify-content: center;

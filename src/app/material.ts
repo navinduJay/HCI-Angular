@@ -6,7 +6,7 @@ import {
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatSelectModule } from "@angular/material/select";
 import { MatDatepickerModule } from "@angular/material/datepicker";
-
+import { MatCardModule } from "@angular/material/card";
 import { NgModule } from "@angular/core";
 
 @NgModule({
@@ -16,7 +16,8 @@ import { NgModule } from "@angular/core";
     MatFormFieldModule,
     MatInputModule,
     MatSelectModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    MatCardModule
   ],
   exports: [
     MatButtonModule,
@@ -24,7 +25,8 @@ import { NgModule } from "@angular/core";
     MatFormFieldModule,
     MatInputModule,
     MatSelectModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    MatCardModule
   ]
 })
 export class MaterialModule {}

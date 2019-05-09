@@ -34,13 +34,14 @@ export class HallTypesComponent implements OnInit {
     function deleteBtn() {
       swal({
         title: "Are you sure?",
-        text: "",
+        text:
+          "Once deleted, you will not be able to recover this imaginary file!",
         icon: "warning",
-        buttons: true,
+        buttons: { cancel: true, confirm: true },
         dangerMode: true
       }).then(willDelete => {
         if (willDelete) {
-          swal("Successfully deleted!", {
+          swal("Poof! Your imaginary file has been deleted!", {
             icon: "success"
           });
         }
@@ -49,13 +50,14 @@ export class HallTypesComponent implements OnInit {
     function deleteBtn2() {
       swal({
         title: "Are you sure?",
-        text: "",
+        text:
+          "Once deleted, you will not be able to recover this imaginary file!",
         icon: "warning",
-        buttons: true,
+        buttons: { cancel: true, confirm: true },
         dangerMode: true
       }).then(willDelete => {
         if (willDelete) {
-          swal("Successfully deleted!", {
+          swal("Poof! Your imaginary file has been deleted!", {
             icon: "success"
           });
         }
