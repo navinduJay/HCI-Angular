@@ -106,7 +106,7 @@ const routes: Routes = [
   {
     path: "admin/dashboard/h_config/housekeeping_menu/housekeeping_halls",
     component: HousekeeingHallsComponent,
-    data: { animation: "isLeft" }
+    data: { animation: "isRight" }
   },
 
   { path: "**", component: NotFoundComponent }
