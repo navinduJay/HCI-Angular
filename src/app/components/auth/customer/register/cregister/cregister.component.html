@@ -1,8 +1,71 @@
+<app-header></app-header>
 <div class="container">
-  <h1>Customer Registration Form goes here</h1>
-  <h3>
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi rem dolor
-    laborum consequatur odio ullam, iste doloribus! Hic sed omnis inventore.
-    Amet ratione, corrupti accusantium tenetur nostrum excepturi neque quas.
-  </h3>
+  <div>
+    <form class="form-content">
+        <div>
+          <img class="logo" src="../../../../../assets/images/regLogo.png">
+
+        </div>
+        <div class="row">
+          <div class="example-container col-sm-5"> 
+            <mat-form-field>
+                <input id="uname" type="email" matInput placeholder="Enter your Email" required>
+            </mat-form-field>
+
+            <mat-form-field>
+              <input id="newpass" type="password" matInput placeholder="Enter password" required>
+            </mat-form-field>
+
+            <mat-form-field>
+              <input id="confpass" type="password" matInput placeholder="Confirm password" required>
+            </mat-form-field>
+
+            <!-- <div class="col-md-2 mb-3 mb-lg-0 col-sm-3">
+              <div class="field-icon-wrap">
+                <div class="icon">
+                  <img
+                    src="../../../assets/images/calendar.svg"
+                    alt=""
+                    class="icons"
+                  />
+                </div>
+                <mat-form-field>
+                  <input type="date" id="dob" />
+                </mat-form-field>
+                
+              </div>
+            </div> -->
+            <mat-form-field>
+              <input id="dob" type="date" matInput placeholder="Date of Birth">
+            </mat-form-field>
+
+            <!-- <mat-format-field>
+              <input type="number" matInput placeholder="Mobile">
+              <mat-icon svgIcon="thumbs-up"></mat-icon>
+            </mat-format-field> -->
+            <mat-form-field>
+              <input id="tel" type="text" matInput placeholder="Telephone" required >
+            </mat-form-field>
+            
+            <br><br>
+            <input type="button" class="btn btn-success" value="Register">
+            <br><br>
+            <input type="reset" class="btn btn-danger" value="Clear">
+            <br><br>
+            <a routerLink = "../login">Back to Login</a>
+            
+          </div>
+
+          <div class="col-sm-5">
+              <img
+                src="../../../../../assets/images/uregister.svg"
+                height="300"
+                width="550px"
+                alt="picture"
+              />
+          </div>
+        </div>
+    </form>
+  </div>
+  
 </div>

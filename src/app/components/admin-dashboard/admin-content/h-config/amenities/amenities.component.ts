@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import swal from "sweetalert";
+// import swal from "sweetalert";
 
 @Component({
   selector: "app-amenities",
@@ -17,27 +17,27 @@ export class AmenitiesComponent implements OnInit {
       .addEventListener("click", addAmenity);
 
     function editBtn() {
-      swal("Successfully updated!", "", "success");
+      //swal("Successfully updated!", "", "success");
     }
 
     function addAmenity() {
-      swal("Successfully added!", "", "success");
+     // swal("Successfully added!", "", "success");
     }
     function deletBtn() {
-      swal({
-        title: "Are you sure?",
-        text:
-          "Once deleted, you will not be able to recover this imaginary file!",
-        icon: "warning",
-        buttons: true,
-        dangerMode: true
-      }).then(willDelete => {
-        if (willDelete) {
-          swal("Successfully deleted! ", {
-            icon: "success"
-          });
-        }
-      });
+      // swal({
+      //   title: "Are you sure?",
+      //   text:
+      //     "Once deleted, you will not be able to recover this imaginary file!",
+      //   icon: "warning",
+      //   // buttons: true,
+      //   dangerMode: true
+      // }).then(willDelete => {
+      //   if (willDelete) {
+      //     swal("Successfully deleted! ", {
+      //       icon: "success"
+      //     });
+      //   }
+      // });
     }
   }
 }

@@ -6,6 +6,7 @@ import {
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatSelectModule } from "@angular/material/select";
 import { MatDatepickerModule } from "@angular/material/datepicker";
+import {MatIconModule} from '@angular/material/icon';
 
 import { NgModule } from "@angular/core";
 
@@ -16,7 +17,8 @@ import { NgModule } from "@angular/core";
     MatFormFieldModule,
     MatInputModule,
     MatSelectModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    MatIconModule
   ],
   exports: [
     MatButtonModule,
@@ -24,7 +26,10 @@ import { NgModule } from "@angular/core";
     MatFormFieldModule,
     MatInputModule,
     MatSelectModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    MatIconModule
   ]
 })
-export class MaterialModule {}
+export class MaterialModule {
+  hide = true;
+}

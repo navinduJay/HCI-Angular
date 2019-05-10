@@ -56,6 +56,7 @@ import { HallsAnalyticsComponent } from "./components/admin-dashboard/admin-cont
 
 import { HousekeepingMenuComponent } from "./components/admin-dashboard/admin-content/h-config/housekeeping/housekeeping-menu/housekeeping-menu.component";
 import { HousekeeingHallsComponent } from './components/admin-dashboard/admin-content/h-config/housekeeping/housekeeping_menu/housekeeing-halls/housekeeing-halls.component';
+import { ForgotPasswordComponent } from "./components/auth/customer/forgot-password/forgot-password.component";
 
 @NgModule({
   declarations: [
@@ -105,7 +106,8 @@ import { HousekeeingHallsComponent } from './components/admin-dashboard/admin-co
     HallsComponent,
     HallsAnalyticsComponent,
     HousekeepingMenuComponent,
-    HousekeeingHallsComponent
+    HousekeeingHallsComponent,
+    ForgotPasswordComponent
   ],
   imports: [
     BrowserModule,

@@ -11,5 +11,15 @@ export class CloginComponent implements OnInit {
 
   ngOnInit() {
   }
+  // hide = true;
+  onLogin(){
+    var username = document.getElementById("uname").nodeValue;
+    var userpass = document.getElementById("upass").nodeValue;
+
+    // if(username = "ravindu@gmail.com"){
+      // document.getElementById("test").innerHTML = username;
+      alert("Successfully logged in");
+    // }
+  }
 
 }

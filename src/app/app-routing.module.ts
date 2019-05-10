@@ -30,6 +30,7 @@ import { HallTypesComponent } from "./components/admin-dashboard/admin-content/h
 import { HallsComponent } from "./components/admin-dashboard/admin-content/h-config/halls/halls.component";
 import { HousekeepingMenuComponent } from "./components/admin-dashboard/admin-content/h-config/housekeeping/housekeeping-menu/housekeeping-menu.component";
 import { HousekeeingHallsComponent } from "./components/admin-dashboard/admin-content/h-config/housekeeping/housekeeping_menu/housekeeing-halls/housekeeing-halls.component";
+import { ForgotPasswordComponent } from "./components/auth/customer/forgot-password/forgot-password.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
@@ -108,8 +109,11 @@ const routes: Routes = [
     component: HousekeeingHallsComponent,
     data: { animation: "isRight" }
   },
-
+  {
+    path:"user/forgot_password", component: ForgotPasswordComponent
+  },
   { path: "**", component: NotFoundComponent }
+  
 ];
 
 @NgModule({
