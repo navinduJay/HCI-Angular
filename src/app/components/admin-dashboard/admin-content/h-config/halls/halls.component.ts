@@ -31,7 +31,7 @@ export class HallsComponent implements OnInit {
         title: "Are you sure?",
         text: "",
         icon: "warning",
-
+        buttons: { cancel: true, confirm: true },
         dangerMode: true
       }).then(willDelete => {
         if (willDelete) {

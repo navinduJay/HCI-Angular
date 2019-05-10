@@ -32,7 +32,6 @@ export class RoomTypesComponent implements OnInit {
       (<HTMLInputElement>document.getElementById("roomType")).value =
         "Executive Room";
       (<HTMLInputElement>document.getElementById("roomCode")).value = "ER";
-
       (<HTMLInputElement>document.getElementById("desc")).value =
         "This is a Executive room";
     }
@@ -40,7 +39,6 @@ export class RoomTypesComponent implements OnInit {
       (<HTMLInputElement>document.getElementById("roomType")).value =
         "Standard Room";
       (<HTMLInputElement>document.getElementById("roomCode")).value = "SR";
-
       (<HTMLInputElement>document.getElementById("desc")).value =
         "This is a Standard room";
     }
@@ -48,7 +46,6 @@ export class RoomTypesComponent implements OnInit {
       (<HTMLInputElement>document.getElementById("roomType")).value =
         "Honeymoon Special Room";
       (<HTMLInputElement>document.getElementById("roomCode")).value = "HS";
-
       (<HTMLInputElement>document.getElementById("desc")).value =
         "This is a Honeymoon Special room";
     }

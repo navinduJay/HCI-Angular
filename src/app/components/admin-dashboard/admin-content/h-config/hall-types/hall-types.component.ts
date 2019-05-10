@@ -19,7 +19,7 @@ export class HallTypesComponent implements OnInit {
         title: "Successfully updated",
         text: "",
         icon: "success",
-        button: "Done"
+        buttons: { cancel: true, confirm: true }
       });
     }
     function addHall() {
@@ -27,7 +27,7 @@ export class HallTypesComponent implements OnInit {
         title: "Successfully added!",
         text: "",
         icon: "success",
-        button: "Done"
+        buttons: { cancel: true, confirm: true }
       });
     }
 

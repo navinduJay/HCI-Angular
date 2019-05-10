@@ -1,0 +1,92 @@
+<!-- MultiStep Form -->
+<div class="row">
+  <div class="col-md-12 col-md-offset-3">
+    <form id="msform">
+      <!-- progressbar -->
+      <ul id="progressbar">
+        <li id="myLi" class="active">Booking Details</li>
+        <li id="myLi">Social Profiles</li>
+        <li id="myLi">Account Setup</li>
+      </ul>
+      <!-- fieldsets -->
+      <fieldset>
+        <h2 class="fs-title">Booking Details</h2>
+        <h3 class="fs-subtitle">Booking Date: 05/09/2019 21:30</h3>
+
+        <div class="row">
+          <div class="container">
+            <div class="col-md-5">
+              <p class="float-left">
+                <b>Room:</b>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Executive
+              </p>
+              <br />
+              <p class="float-left"><b>Booking Number:</b> &nbsp; 196552</p>
+              <br />
+              <p class="float-left">
+                <b>Check in: </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 05/09/2019
+              </p>
+              <br />
+              <p class="float-left">
+                <b>Check out:</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp; 05/10/2019
+              </p>
+              <br />
+              <p class="float-left">
+                <b>Payment status:</b> &nbsp;&nbsp;&nbsp; Success
+              </p>
+              <br />
+              <p class="float-left">
+                <b>Booking status:</b> &nbsp;&nbsp;&nbsp;&nbsp; Success
+              </p>
+              <br />
+              <p class="float-left">
+                <b>Adults:</b>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                2
+              </p>
+              <br />
+              <p class="float-left">
+                <b>Kids: </b>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                1
+              </p>
+              <br />
+              <p class="float-left">
+                <b>Nights:</b>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                1
+              </p>
+            </div>
+          </div>
+        </div>
+        <hr />
+
+        <p class="float-left">
+          <b>Price:</b>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          $1500
+        </p>
+        <br />
+        <br />
+        <a
+          class="btn btn-dark float-right"
+          id="myA"
+          routerLink="/admin/dashboard/bookings/single_booking/payment"
+          role="button"
+          >Next</a
+        >
+        <a
+          class="btn btn-dark float-left"
+          id="myA"
+          routerLink="/admin/dashboard/bookings/single_booking/payment"
+          role="button"
+          >Previous</a
+        >
+      </fieldset>
+    </form>
+  </div>
+</div>
+<!-- /.MultiStep Form -->

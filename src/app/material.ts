@@ -8,6 +8,7 @@ import { MatSelectModule } from "@angular/material/select";
 import { MatDatepickerModule } from "@angular/material/datepicker";
 import { MatCardModule } from "@angular/material/card";
 import { NgModule } from "@angular/core";
+import { MatTableModule } from "@angular/material/table";
 
 @NgModule({
   imports: [
@@ -17,7 +18,8 @@ import { NgModule } from "@angular/core";
     MatInputModule,
     MatSelectModule,
     MatDatepickerModule,
-    MatCardModule
+    MatCardModule,
+    MatTableModule
   ],
   exports: [
     MatButtonModule,
@@ -26,7 +28,8 @@ import { NgModule } from "@angular/core";
     MatInputModule,
     MatSelectModule,
     MatDatepickerModule,
-    MatCardModule
+    MatCardModule,
+    MatTableModule
   ]
 })
 export class MaterialModule {}

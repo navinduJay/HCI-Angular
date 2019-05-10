@@ -30,6 +30,9 @@ import { HallTypesComponent } from "./components/admin-dashboard/admin-content/h
 import { HallsComponent } from "./components/admin-dashboard/admin-content/h-config/halls/halls.component";
 import { HousekeepingMenuComponent } from "./components/admin-dashboard/admin-content/h-config/housekeeping/housekeeping-menu/housekeeping-menu.component";
 import { HousekeeingHallsComponent } from "./components/admin-dashboard/admin-content/h-config/housekeeping/housekeeping_menu/housekeeing-halls/housekeeing-halls.component";
+import { SingleBookingComponent } from "./components/admin-dashboard/admin-content/bookings/single-booking/single-booking.component";
+import { PaymentComponent } from "./components/admin-dashboard/admin-content/bookings/single-booking/multi-step-form/payment/payment.component";
+import { RoomConfirmComponent } from "./components/admin-dashboard/admin-content/bookings/single-booking/multi-step-form/room-confirm/room-confirm.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
@@ -106,6 +109,22 @@ const routes: Routes = [
   {
     path: "admin/dashboard/h_config/housekeeping_menu/housekeeping_halls",
     component: HousekeeingHallsComponent,
+    data: { animation: "isRight" }
+  },
+
+  {
+    path: "admin/dashboard/bookings/single_booking/payment",
+    component: PaymentComponent,
+    data: { animation: "isRight" }
+  },
+  {
+    path: "admin/dashboard/bookings/single_booking",
+    component: SingleBookingComponent,
+    data: { animation: "isRight" }
+  },
+  {
+    path: "admin/dashboard/bookings/single_booking/confirm_room",
+    component: RoomConfirmComponent,
     data: { animation: "isRight" }
   },
 

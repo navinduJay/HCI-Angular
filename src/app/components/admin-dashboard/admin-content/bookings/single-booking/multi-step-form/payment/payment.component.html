@@ -1,0 +1,66 @@
+<app-admin-nav></app-admin-nav>
+
+<div class="box">
+  <div class="container"></div>
+</div>
+<!-- MultiStep Form -->
+<div class="row">
+  <div class="col-md-12">
+    <form id="msform">
+      <!-- progressbar -->
+      <ul id="progressbar">
+        <li id="myLi">Booking Details</li>
+        <li id="myLi" class="active">Payment</li>
+        <li id="myLi">Account Setup</li>
+      </ul>
+      <!-- fieldsets -->
+      <fieldset>
+        <h2 class="fs-title">Payment</h2>
+        <h3 class="fs-subtitle">Total Paid: $1500 &nbsp; Pending: $0.00</h3>
+
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Added Date</th>
+              <th>Invoice Number</th>
+              <th>Amount</th>
+              <th>Invoice</th>
+              <th>Edit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>05/09/2019</td>
+              <td>120</td>
+              <td>1500.00</td>
+              <td><button mat-raised-button color="accent">Invoice</button></td>
+              <td><button mat-raised-button color="accent">Edit</button></td>
+            </tr>
+          </tbody>
+        </table>
+        <hr />
+        <br />
+        <br />
+        <a
+          class="btn btn-dark float-right"
+          id="myA"
+          routerLink="/admin/dashboard/bookings/single_booking/confirm_room"
+          role="button"
+          >Next</a
+        >
+        <a
+          class="btn btn-dark float-left"
+          id="myA"
+          routerLink="/admin/dashboard/bookings"
+          role="button"
+          >Previous</a
+        >
+      </fieldset>
+    </form>
+  </div>
+</div>
+<!-- /.MultiStep Form -->
+
+<app-footer></app-footer>
