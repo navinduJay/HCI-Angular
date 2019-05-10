@@ -20,7 +20,6 @@ export class HallsComponent implements OnInit {
     //   .addEventListener("click", deleteHallOne);
     // document.getElementById("editBtn").addEventListener("click", editHall);
 
-<<<<<<< HEAD
     // function addHall() {
     //   swal("Successfully added!", "", "success");
     // }
@@ -57,45 +56,6 @@ export class HallsComponent implements OnInit {
     //     }
     //   });
     // }
-=======
-    function addHall() {
-      swal("Successfully added!", "", "success");
-    }
-    function editHall() {
-      swal("Successfully updated!", "", "success");
-    }
-    function deleteHallOne() {
-      swal({
-        title: "Are you sure?",
-        text: "",
-        icon: "warning",
-
-        dangerMode: true
-      }).then(willDelete => {
-        if (willDelete) {
-          swal("Deleted successfully!", {
-            icon: "success"
-          });
-        }
-      });
-    }
-    function deleteHallTwo() {
-      swal({
-        title: "Are you sure?",
-        text:
-          "Once deleted, you will not be able to recover this imaginary file!",
-        icon: "warning",
-        buttons: { cancel: true, confirm: true },
-        dangerMode: true
-      }).then(willDelete => {
-        if (willDelete) {
-          swal("Poof! Your imaginary file has been deleted!", {
-            icon: "success"
-          });
-        }
-      });
-    }
->>>>>>> f2bec672c4ed0f939570709fa555238fb19e2a80
 
     // function setProperties() {
     //   (<HTMLInputElement>document.getElementById("myTDs")).innerHTML =

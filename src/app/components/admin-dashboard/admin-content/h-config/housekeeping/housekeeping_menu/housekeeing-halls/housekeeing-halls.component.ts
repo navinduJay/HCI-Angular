@@ -22,7 +22,6 @@ export class HousekeeingHallsComponent implements OnInit {
     //   swal("Successfully updated!", "", "success");
     // }
 
-<<<<<<< HEAD
     // function deleteHK() {
     //   swal({
     //     title: "Are you sure?",
@@ -56,40 +55,5 @@ export class HousekeeingHallsComponent implements OnInit {
     //     }
     //   });
     // }
-=======
-    function deleteHK() {
-      swal({
-        title: "Are you sure?",
-        text:
-          "Once deleted, you will not be able to recover this imaginary file!",
-        icon: "warning",
-        buttons: { cancel: true, confirm: true },
-        dangerMode: true
-      }).then(willDelete => {
-        if (willDelete) {
-          swal("Poof! Your imaginary file has been deleted!", {
-            icon: "success"
-          });
-        }
-      });
-    }
-
-    function deleteHK1() {
-      swal({
-        title: "Are you sure?",
-        text:
-          "Once deleted, you will not be able to recover this imaginary file!",
-        icon: "warning",
-        buttons: { cancel: true, confirm: true },
-        dangerMode: true
-      }).then(willDelete => {
-        if (willDelete) {
-          swal("Poof! Your imaginary file has been deleted!", {
-            icon: "success"
-          });
-        }
-      });
-    }
->>>>>>> f2bec672c4ed0f939570709fa555238fb19e2a80
   }
 }

@@ -49,7 +49,6 @@ export class RoomTypesComponent implements OnInit {
     //     "Honeymoon Special Room";
     //   (<HTMLInputElement>document.getElementById("roomCode")).value = "HS";
 
-<<<<<<< HEAD
     //   (<HTMLInputElement>document.getElementById("desc")).value =
     //     "This is a Honeymoon Special room";
     // }
@@ -77,34 +76,5 @@ export class RoomTypesComponent implements OnInit {
     //     }
     //   });
     // }
-=======
-      (<HTMLInputElement>document.getElementById("desc")).value =
-        "This is a Honeymoon Special room";
-    }
-    function editSignal() {
-      swal("Details saved successfully!", "", "success");
-    }
-    function addRooms() {
-      swal("Room added successfully!", "", "success");
-    }
-    function deleteHS() {
-      swal({
-        title: "Are you sure?",
-        text:
-          "Once deleted, you will not be able to recover this imaginary file!",
-        icon: "warning",
-        buttons: { cancel: true, confirm: true },
-        dangerMode: true
-      }).then(willDelete => {
-        if (willDelete) {
-          swal("Poof! Your imaginary file has been deleted!", {
-            icon: "success"
-          });
-        } else {
-          swal("Your imaginary file is safe!");
-        }
-      });
-    }
->>>>>>> f2bec672c4ed0f939570709fa555238fb19e2a80
   }
 }
