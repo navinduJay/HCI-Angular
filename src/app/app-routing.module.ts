@@ -33,6 +33,7 @@ import { HousekeeingHallsComponent } from "./components/admin-dashboard/admin-co
 import { SingleBookingComponent } from "./components/admin-dashboard/admin-content/bookings/single-booking/single-booking.component";
 import { PaymentComponent } from "./components/admin-dashboard/admin-content/bookings/single-booking/multi-step-form/payment/payment.component";
 import { RoomConfirmComponent } from "./components/admin-dashboard/admin-content/bookings/single-booking/multi-step-form/room-confirm/room-confirm.component";
+import { ForgotPasswordComponent } from "./components/auth/customer/forgot-password/forgot-password.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
@@ -128,6 +129,10 @@ const routes: Routes = [
     data: { animation: "isRight" }
   },
 
+  {
+    path: "user/forgot_password",
+    component: ForgotPasswordComponent
+  },
   { path: "**", component: NotFoundComponent }
 ];
 

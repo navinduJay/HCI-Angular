@@ -55,11 +55,13 @@ import { HallsComponent } from "./components/admin-dashboard/admin-content/h-con
 import { HallsAnalyticsComponent } from "./components/admin-dashboard/admin-content/analytics/halls-analytics/halls-analytics.component";
 
 import { HousekeepingMenuComponent } from "./components/admin-dashboard/admin-content/h-config/housekeeping/housekeeping-menu/housekeeping-menu.component";
-import { HousekeeingHallsComponent } from "./components/admin-dashboard/admin-content/h-config/housekeeping/housekeeping_menu/housekeeing-halls/housekeeing-halls.component";
+
 import { SingleBookingComponent } from "./components/admin-dashboard/admin-content/bookings/single-booking/single-booking.component";
 import { MultiStepFormComponent } from "./components/admin-dashboard/admin-content/bookings/single-booking/multi-step-form/multi-step-form.component";
-import { PaymentComponent } from './components/admin-dashboard/admin-content/bookings/single-booking/multi-step-form/payment/payment.component';
-import { RoomConfirmComponent } from './components/admin-dashboard/admin-content/bookings/single-booking/multi-step-form/room-confirm/room-confirm.component';
+import { PaymentComponent } from "./components/admin-dashboard/admin-content/bookings/single-booking/multi-step-form/payment/payment.component";
+import { RoomConfirmComponent } from "./components/admin-dashboard/admin-content/bookings/single-booking/multi-step-form/room-confirm/room-confirm.component";
+import { HousekeeingHallsComponent } from "./components/admin-dashboard/admin-content/h-config/housekeeping/housekeeping_menu/housekeeing-halls/housekeeing-halls.component";
+import { ForgotPasswordComponent } from "./components/auth/customer/forgot-password/forgot-password.component";
 
 @NgModule({
   declarations: [
@@ -113,7 +115,8 @@ import { RoomConfirmComponent } from './components/admin-dashboard/admin-content
     SingleBookingComponent,
     MultiStepFormComponent,
     PaymentComponent,
-    RoomConfirmComponent
+    RoomConfirmComponent,
+    ForgotPasswordComponent
   ],
   imports: [
     BrowserModule,

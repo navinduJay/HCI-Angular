@@ -1,0 +1,39 @@
+/* .example-container {
+    display: flex;
+    flex-direction: column;
+  } */
+  
+  .example-container > * {
+    width: 100%;
+  }
+  
+  input.example-right-align::-webkit-outer-spin-button,
+  input.example-right-align::-webkit-inner-spin-button {
+    display: none;
+  }
+  
+  input.example-right-align {
+    -moz-appearance: textfield;
+  }
+  .form-content {
+    padding: 5%;
+    border: 1px solid #ced4da;
+    border-radius: 1.5rem;
+    margin-top: 2%;
+    width: 100%;
+    background-color: honeydew;
+  }
+  .form-control {
+    border-radius: 1.5rem;
+    margin-top: 2%;
+  }
+  .heading {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .logo{
+    align-content: center;
+  }
+
+
+  

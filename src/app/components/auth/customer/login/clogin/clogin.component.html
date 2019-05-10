@@ -1,9 +1,58 @@
 <app-header></app-header>
 <div class="container">
-  <h1>Customer Login Form goes here</h1>
-  <h3>
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi rem dolor
-    laborum consequatur odio ullam, iste doloribus! Hic sed omnis inventore.
-    Amet ratione, corrupti accusantium tenetur nostrum excepturi neque quas.
-  </h3>
+  <div>
+    <form class="form-content">
+      <div class="logo">
+        <!-- <h1 class="heading">Login to Habibi</h1> -->
+        <img class="logo" src="../../../../../assets/images/loginLogo.png" />
+      </div>
+      <div class="row">
+        <div class="example-container col-sm-5">
+          <mat-form-field>
+            <input
+              id="uname"
+              type="email"
+              matInput
+              placeholder="Enter your Email"
+              required
+            />
+          </mat-form-field>
+
+          <mat-form-field>
+            <input
+              id="upass"
+              type="password"
+              matInput
+              placeholder="Enter your password"
+              required
+            />
+          </mat-form-field>
+          <br />
+          <input
+            type="button"
+            class="btn btn-success"
+            value="Login"
+            onclick="onLogin()"
+          />
+          <br /><br />
+          <input type="reset" class="btn btn-danger" value="Clear" />
+          <br /><br />
+          <p id="test"></p>
+          <a routerLink="../forgot_password">Forgot password?</a><br />
+          <a style="color: blue" routerLink="../register"
+            >Don't have an account?</a
+          >
+        </div>
+
+        <div class="col-sm-5">
+          <img
+            src="../../../../../assets/images/ulogin.svg"
+            height="300"
+            width="550px"
+            alt="picture"
+          />
+        </div>
+      </div>
+    </form>
+  </div>
 </div>

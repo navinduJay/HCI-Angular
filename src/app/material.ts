@@ -6,6 +6,8 @@ import {
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatSelectModule } from "@angular/material/select";
 import { MatDatepickerModule } from "@angular/material/datepicker";
+import { MatIconModule } from "@angular/material/icon";
+
 import { MatCardModule } from "@angular/material/card";
 import { NgModule } from "@angular/core";
 import { MatTableModule } from "@angular/material/table";
@@ -19,7 +21,8 @@ import { MatTableModule } from "@angular/material/table";
     MatSelectModule,
     MatDatepickerModule,
     MatCardModule,
-    MatTableModule
+    MatTableModule,
+    MatIconModule
   ],
   exports: [
     MatButtonModule,
@@ -29,7 +32,10 @@ import { MatTableModule } from "@angular/material/table";
     MatSelectModule,
     MatDatepickerModule,
     MatCardModule,
-    MatTableModule
+    MatTableModule,
+    MatIconModule
   ]
 })
-export class MaterialModule {}
+export class MaterialModule {
+  hide = true;
+}
