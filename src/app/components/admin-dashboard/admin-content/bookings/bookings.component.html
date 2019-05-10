@@ -1,3 +1,273 @@
-<p>
-  bookings works!
-</p>
+<app-admin-nav></app-admin-nav>
+
+<div class="box">
+  <div class="container">
+    <h4>
+      <app-analytics></app-analytics>
+      <br />
+
+      <br />
+      <mat-card>
+        <span class="badge badge-primary">Fliter Bookings</span>
+        <form class="form-inline">
+          <div class="form-group mx-sm-3  mb-2">
+            <mat-form-field>
+              <mat-label>Room type</mat-label>
+              <mat-select [(value)]="selectedRoom">
+                <mat-option>All</mat-option>
+                <mat-option value="option1">Standard</mat-option>
+                <mat-option value="option2">Executive</mat-option>
+                <mat-option value="option3">Honeymoon Special</mat-option>
+                <mat-option value="option3">Deluxe</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          &nbsp;&nbsp;&nbsp;
+          <div class="form-group mx-sm-3 mb-2">
+            <input
+              placeholder="Check in
+            "
+              class="form-control"
+              type="text"
+              onfocus="(this.type = 'date')"
+              id="date"
+            />
+          </div>
+          <div class="form-group mx-sm-3 mb-2">
+            <input
+              placeholder="Check in"
+              class="form-control"
+              type="text"
+              onfocus="(this.type = 'date')"
+              id="date"
+            />
+          </div>
+          <div class="form-group mx-sm-3 mb-2">
+            <input
+              placeholder="Booking date"
+              class="form-control"
+              type="text"
+              onfocus="(this.type = 'date')"
+              id="date"
+            />
+          </div>
+          &nbsp;&nbsp;&nbsp;
+          <div class="form-group mx-sm-3 mb-2">
+            <mat-form-field>
+              <mat-label>Hall type</mat-label>
+              <mat-select [(value)]="selectedHall">
+                <mat-option value="succ">Winchester</mat-option>
+                <mat-option value="pend">King Court</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          &nbsp;&nbsp;&nbsp;
+          <div class="form-group mx-sm-3 mb-2">
+            <mat-form-field>
+              <mat-label>Booking Status</mat-label>
+              <mat-select [(value)]="selectedBooking">
+                <mat-option value="succ">Success</mat-option>
+                <mat-option value="pend">Pending</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          &nbsp;&nbsp;&nbsp;
+          <div class="form-group mx-sm-3 mb-2">
+            <mat-form-field>
+              <mat-label>Payment Status</mat-label>
+              <mat-select [(value)]="selectedPayment">
+                <mat-option value="succ">Success</mat-option>
+                <mat-option value="pend">Pending</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </form>
+      </mat-card>
+      <br />
+
+      <small> <a routerLink="/admin/dashboard">Dashboard</a> </small> /
+      <small>
+        <a routerLink="/admin/dashboard/h_config">Hotel Configuration</a>
+      </small>
+      /
+      <strong>Bookings </strong>
+      <button
+        type="button"
+        data-toggle="modal"
+        class="btn btn-dark float-right"
+        data-target="#addRoom"
+      >
+        + ADD
+      </button>
+      <div class="float-right"><app-search></app-search></div>
+
+      <!-- <app-search></app-search> -->
+      <div class="modal fade" id="addRoom" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3>Add a room</h3>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Room Name" value="" />
+                  </mat-form-field>
+                  <br />
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Room Code" value="" />
+                  </mat-form-field>
+                  <br />
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Base Price" value="" />
+                  </mat-form-field>
+                </div>
+
+                <div class="form-group">
+                  <label>Amenties<small class="req">*</small></label>
+                  <div class="form-check">
+                    <mat-checkbox>Swimming Pool</mat-checkbox>
+                    <br />
+                    <mat-checkbox>Bar</mat-checkbox>
+                    <br />
+                    <mat-checkbox>Restaurant</mat-checkbox>
+                    <br />
+                    <mat-checkbox>Spa</mat-checkbox>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <mat-form-field class="example-full-width">
+                    <textarea matInput placeholder="Description"></textarea>
+                  </mat-form-field>
+                </div>
+                <div class="form-group">
+                  <label>Add an Image<small class="req">*</small></label>
+                  <input type="file" class="form-control" />
+                </div>
+
+                <button
+                  type="button"
+                  class="btn btn-dark float-right"
+                  style="width: 75px"
+                  id="addRooms"
+                >
+                  ADD
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="edit" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3>Edit a room</h3>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label>Room Name<small class="req">*</small></label>
+                  <input
+                    type="text"
+                    id="roomType"
+                    value=""
+                    class="form-control"
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Room Code<small class="req">*</small></label>
+                  <input
+                    type="text"
+                    id="roomCode"
+                    value=""
+                    class="form-control"
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Description</label>
+                  <textarea
+                    value=""
+                    class="form-control"
+                    rows="5"
+                    id="desc"
+                  ></textarea>
+                </div>
+                <div class="form-group">
+                  <label>Add an Image<small class="req">*</small></label>
+                  <input type="file" class="form-control" />
+                </div>
+
+                <button
+                  type="button"
+                  class="btn btn-dark float-right"
+                  style="width: 75px"
+                  id="editBtn"
+                >
+                  EDIT
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Model End here-->
+    </h4>
+    <br />
+    <div class="row">
+      <div class="col-md-12">
+        <div class="table-responsive">
+          <table id="mytable" class="table table-bordred table-striped">
+            <thead>
+              <th>#</th>
+              <th>Booking Number</th>
+              <th>Customer Name</th>
+              <th>Room/Hall</th>
+              <th>Check in</th>
+              <th>Check out</th>
+              <th>Booking Date</th>
+              <th>Payment Status</th>
+              <th>Booking Status</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>196552</td>
+                <td>Maleesha Wijeratne</td>
+                <td>Executive</td>
+                <td>05/09/2019</td>
+                <td>05/10/2019</td>
+                <td>05/09/2019 21:30</td>
+                <td>Success</td>
+                <td>Success</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>199638</td>
+                <td>Navindu Jayatilake</td>
+                <td>Executive</td>
+                <td>05/09/2019</td>
+                <td>05/10/2019</td>
+                <td>05/09/2019 21:30</td>
+                <td>Success</td>
+                <td>Success</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
