@@ -26,6 +26,7 @@
     "animate.css": "^3.7.0",
     "aos": "^3.0.0-beta.6",
     "core-js": "^2.5.4",
+    "createjs-module": "^0.8.3",
     "gsap": "^2.1.2",
     "hover.css": "^2.3.2",
     "rxjs": "~6.3.3",
