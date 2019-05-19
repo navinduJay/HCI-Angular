@@ -68,6 +68,10 @@ import { BookedHallsComponent } from "./components/admin-dashboard/admin-content
 import { DiscountsComponent } from "./components/admin-dashboard/admin-content/bookings/discounts/discounts.component";
 import { GuestAnalyticsComponent } from "./components/admin-dashboard/admin-content/analytics/guest-analytics/guest-analytics.component";
 
+import { FlatpickrModule } from "angularx-flatpickr";
+import { CalendarModule, DateAdapter } from "angular-calendar";
+import { adapterFactory } from "angular-calendar/date-adapters/date-fns";
+import { NgbModalModule } from "@ng-bootstrap/ng-bootstrap";
 @NgModule({
   declarations: [
     AppComponent,
@@ -131,10 +135,17 @@ import { GuestAnalyticsComponent } from "./components/admin-dashboard/admin-cont
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    NgbModalModule,
     MaterialModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FlatpickrModule.forRoot(),
+    CalendarModule.forRoot({
+      provide: DateAdapter,
+      useFactory: adapterFactory
+    })
   ],
+
   providers: [ConfigService],
   bootstrap: [AppComponent]
 })
