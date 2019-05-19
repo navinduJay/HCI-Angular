@@ -1,0 +1,46 @@
+.table {
+  border: 1px solid transparent;
+  border-radius: 20px;
+}
+
+.req {
+  color: red;
+}
+
+.modal-body {
+  width: 500px !important;
+}
+
+.example-h2 {
+  margin: 10px;
+}
+
+.example-section {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.example-margin {
+  margin: 0 10px;
+}
+.example-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.example-container > * {
+  width: 100%;
+}
+
+.modal-header {
+  background-color: aliceblue;
+}
+
+a {
+  color: blue;
+}
+table {
+  width: 100%;
+}
