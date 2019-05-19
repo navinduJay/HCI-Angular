@@ -43,7 +43,13 @@
   height: 125px;
   margin-left: 15px;
 }
+#link {
+  color: white;
+}
 
+#link:hover {
+  font-size: 3rem !important;
+}
 .fontsty {
   margin-right: -15px;
 }

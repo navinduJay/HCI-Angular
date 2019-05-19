@@ -68,8 +68,6 @@ export class RoomTypesComponent implements OnInit {
           swal("Poof! Your imaginary file has been deleted!", {
             icon: "success"
           });
-        } else {
-          swal("Your imaginary file is safe!");
         }
       });
     }

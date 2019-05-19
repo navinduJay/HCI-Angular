@@ -62,6 +62,9 @@ import { PaymentComponent } from "./components/admin-dashboard/admin-content/boo
 import { RoomConfirmComponent } from "./components/admin-dashboard/admin-content/bookings/single-booking/multi-step-form/room-confirm/room-confirm.component";
 import { HousekeeingHallsComponent } from "./components/admin-dashboard/admin-content/h-config/housekeeping/housekeeping_menu/housekeeing-halls/housekeeing-halls.component";
 import { ForgotPasswordComponent } from "./components/auth/customer/forgot-password/forgot-password.component";
+import { BookedRoomsComponent } from './components/admin-dashboard/admin-content/bookings/booked-rooms/booked-rooms.component';
+import { BookedHallsComponent } from './components/admin-dashboard/admin-content/bookings/booked-halls/booked-halls.component';
+import { DiscountsComponent } from './components/admin-dashboard/admin-content/bookings/discounts/discounts.component';
 
 @NgModule({
   declarations: [
@@ -116,7 +119,10 @@ import { ForgotPasswordComponent } from "./components/auth/customer/forgot-passw
     MultiStepFormComponent,
     PaymentComponent,
     RoomConfirmComponent,
-    ForgotPasswordComponent
+    ForgotPasswordComponent,
+    BookedRoomsComponent,
+    BookedHallsComponent,
+    DiscountsComponent
   ],
   imports: [
     BrowserModule,

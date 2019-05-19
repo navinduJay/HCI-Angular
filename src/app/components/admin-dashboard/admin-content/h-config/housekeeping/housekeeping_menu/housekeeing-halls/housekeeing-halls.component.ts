@@ -24,15 +24,14 @@ export class HousekeeingHallsComponent implements OnInit {
 
     function deleteHK() {
       swal({
-        title: "Are you sure?",
-        text:
-          "Once deleted, you will not be able to recover this imaginary file!",
+        title: "Are you sure you want to delete?",
+        text: "",
         icon: "warning",
         buttons: { cancel: true, confirm: true },
         dangerMode: true
       }).then(willDelete => {
         if (willDelete) {
-          swal("Poof! Your imaginary file has been deleted!", {
+          swal("Deleted successfully!", {
             icon: "success"
           });
         }
@@ -41,15 +40,14 @@ export class HousekeeingHallsComponent implements OnInit {
 
     function deleteHK1() {
       swal({
-        title: "Are you sure?",
-        text:
-          "Once deleted, you will not be able to recover this imaginary file!",
+        title: "Are you sure you want to delete?",
+        text: "",
         icon: "warning",
         buttons: { cancel: true, confirm: true },
         dangerMode: true
       }).then(willDelete => {
         if (willDelete) {
-          swal("Poof! Your imaginary file has been deleted!", {
+          swal("Deleted successfully!", {
             icon: "success"
           });
         }

@@ -34,6 +34,9 @@ import { SingleBookingComponent } from "./components/admin-dashboard/admin-conte
 import { PaymentComponent } from "./components/admin-dashboard/admin-content/bookings/single-booking/multi-step-form/payment/payment.component";
 import { RoomConfirmComponent } from "./components/admin-dashboard/admin-content/bookings/single-booking/multi-step-form/room-confirm/room-confirm.component";
 import { ForgotPasswordComponent } from "./components/auth/customer/forgot-password/forgot-password.component";
+import { BookedRoomsComponent } from "./components/admin-dashboard/admin-content/bookings/booked-rooms/booked-rooms.component";
+import { BookedHallsComponent } from "./components/admin-dashboard/admin-content/bookings/booked-halls/booked-halls.component";
+import { DiscountsComponent } from "./components/admin-dashboard/admin-content/bookings/discounts/discounts.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
@@ -120,8 +123,7 @@ const routes: Routes = [
   },
   {
     path: "admin/dashboard/bookings/single_booking",
-    component: SingleBookingComponent,
-    data: { animation: "isRight" }
+    component: SingleBookingComponent
   },
   {
     path: "admin/dashboard/bookings/single_booking/confirm_room",
@@ -132,6 +134,22 @@ const routes: Routes = [
   {
     path: "user/forgot_password",
     component: ForgotPasswordComponent
+  },
+
+  {
+    path: "admin/dashboard/bookings/booked_rooms",
+    component: BookedRoomsComponent,
+    data: { animation: "isRight" }
+  },
+  {
+    path: "admin/dashboard/bookings/booked_halls",
+    component: BookedHallsComponent,
+    data: { animation: "isRight" }
+  },
+  {
+    path: "admin/dashboard/bookings/checkout",
+    component: DiscountsComponent,
+    data: { animation: "isLeft" }
   },
   { path: "**", component: NotFoundComponent }
 ];

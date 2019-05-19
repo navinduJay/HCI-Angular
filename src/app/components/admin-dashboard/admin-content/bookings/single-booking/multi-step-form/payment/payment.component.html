@@ -26,7 +26,6 @@
               <th>Invoice Number</th>
               <th>Amount</th>
               <th>Invoice</th>
-              <th>Edit</th>
             </tr>
           </thead>
           <tbody>
@@ -35,8 +34,19 @@
               <td>05/09/2019</td>
               <td>120</td>
               <td>1500.00</td>
-              <td><button mat-raised-button color="accent">Invoice</button></td>
-              <td><button mat-raised-button color="accent">Edit</button></td>
+              <td>
+                <button
+                  mat-raised-button
+                  color="accent"
+                  onClick="
+                    window.open(
+                      '../../../../../../../../assets/files/INVOICE_120.pdf'
+                    )
+                  "
+                >
+                  Get Invoice
+                </button>
+              </td>
             </tr>
           </tbody>
         </table>
@@ -53,7 +63,7 @@
         <a
           class="btn btn-dark float-left"
           id="myA"
-          routerLink="/admin/dashboard/bookings"
+          routerLink="/admin/dashboard/bookings/single_booking"
           role="button"
           >Previous</a
         >
