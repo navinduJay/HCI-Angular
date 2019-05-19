@@ -67,7 +67,15 @@ import { EditUserProfileComponent } from './components/auth/customer/profile/edi
 import { AuthenticationGuard } from './authentication.guard';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { BookedRoomsComponent } from "./components/admin-dashboard/admin-content/bookings/booked-rooms/booked-rooms.component";
+import { BookedHallsComponent } from "./components/admin-dashboard/admin-content/bookings/booked-halls/booked-halls.component";
+import { DiscountsComponent } from "./components/admin-dashboard/admin-content/bookings/discounts/discounts.component";
+import { GuestAnalyticsComponent } from "./components/admin-dashboard/admin-content/analytics/guest-analytics/guest-analytics.component";
 
+import { FlatpickrModule } from "angularx-flatpickr";
+import { CalendarModule, DateAdapter } from "angular-calendar";
+import { adapterFactory } from "angular-calendar/date-adapters/date-fns";
+import { NgbModalModule } from "@ng-bootstrap/ng-bootstrap";
 @NgModule({
   declarations: [
     AppComponent,
@@ -123,16 +131,27 @@ import { RouterModule } from '@angular/router';
     RoomConfirmComponent,
     ForgotPasswordComponent,
     ProfileComponent,
-    EditUserProfileComponent
+    EditUserProfileComponent,
+    BookedRoomsComponent,
+    BookedHallsComponent,
+    DiscountsComponent,
+    GuestAnalyticsComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    NgbModalModule,
     MaterialModule,
+    FormsModule,
     ReactiveFormsModule,
-    FormsModule
+    FlatpickrModule.forRoot(),
+    CalendarModule.forRoot({
+      provide: DateAdapter,
+      useFactory: adapterFactory
+    })
   ],
+
   providers: [ConfigService, AuthenticationGuard],
   bootstrap: [AppComponent]
 })

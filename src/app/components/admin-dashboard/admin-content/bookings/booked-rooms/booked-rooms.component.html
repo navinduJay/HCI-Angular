@@ -1,0 +1,228 @@
+<app-admin-nav></app-admin-nav>
+
+<div class="box">
+  <div class="container">
+    <h4>
+      <app-analytics></app-analytics>
+
+      <br />
+
+      <br />
+      <mat-card>
+        <span class="badge badge-primary">Fliter Bookings</span>
+        <form class="form-inline">
+          <div class="form-group mx-sm-3  mb-2">
+            <mat-form-field>
+              <mat-label>Room type</mat-label>
+              <mat-select [(value)]="selectedRoom">
+                <mat-option>All</mat-option>
+                <mat-option value="option1">Standard</mat-option>
+                <mat-option value="option2">Executive</mat-option>
+                <mat-option value="option3">Honeymoon Special</mat-option>
+                <mat-option value="option3">Deluxe</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          &nbsp;&nbsp;&nbsp;
+          <div class="form-group mx-sm-3 mb-2">
+            <input
+              placeholder="Check in
+            "
+              class="form-control"
+              type="text"
+              onfocus="(this.type = 'date')"
+              id="date"
+            />
+          </div>
+          <div class="form-group mx-sm-3 mb-2">
+            <input
+              placeholder="Check out"
+              class="form-control"
+              type="text"
+              onfocus="(this.type = 'date')"
+              id="date"
+            />
+          </div>
+        </form>
+      </mat-card>
+      <br />
+
+      <small> <a routerLink="/admin/dashboard">Dashboard</a> </small> /
+      <small>
+        <a routerLink="/admin/dashboard/h_config">Hotel Configuration</a>
+      </small>
+      /
+      <small>
+        <a routerLink="/admin/dashboard/bookings">Bookings</a>
+      </small>
+      /
+      <strong>Booked Rooms</strong>
+
+      <div class="float-right"><app-search></app-search></div>
+
+      <div class="modal fade" id="checkout" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3>Extend Booking</h3>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label>Guest Name<small class="req">*</small></label>
+                  <input
+                    type="text"
+                    id="gName"
+                    value="Navindu Jayatilake"
+                    class="form-control"
+                  />
+                </div>
+                <mat-form-field>
+                  <mat-label>Room Type</mat-label>
+                  <select matNativeControl required>
+                    <option value="standard">Standard </option>
+                    <option value="executive">Executive</option>
+                    <option value="honeymoonS">Deluxe</option>
+                    <option value="honeymoonS">Honeymoon Special</option>
+                  </select>
+                </mat-form-field>
+                <div class="form-group">
+                  <label>Adults<small class="req">*</small></label>
+                  <input
+                    type="text"
+                    id="adults"
+                    value="1"
+                    class="form-control"
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Children<small class="req">*</small></label>
+                  <input
+                    type="text"
+                    id="children"
+                    value="1"
+                    class="form-control"
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Check in<small class="req">*</small></label>
+                  <input
+                    type="date"
+                    id="children"
+                    value="2019-05-01"
+                    class="form-control"
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Check out<small class="req">*</small></label>
+                  <input
+                    type="date"
+                    id="children"
+                    value="2019-05-03"
+                    class="form-control"
+                  />
+                </div>
+
+                <button
+                  type="button"
+                  class="btn btn-dark float-right"
+                  style="width: 75px"
+                  id="extendBtn"
+                >
+                  EXTEND
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </h4>
+    <br />
+    <div class="row">
+      <div class="col-md-12">
+        <div class="table-responsive">
+          <table id="mytable" class="table table-bordred table-striped">
+            <thead>
+              <th>Booking No</th>
+              <th>Customer Name</th>
+              <th>Room/Hall</th>
+              <th>Check in</th>
+              <th>Check out</th>
+              <th>Booking Date</th>
+              <th>Payment Status</th>
+              <th>Booking Status</th>
+
+              <th>Actions</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="#">199638</a></td>
+                <td>Navindu Jayatilake</td>
+                <td>Executive</td>
+                <td>05/01/2019</td>
+                <td>05/03/2019</td>
+                <td>04/28/2019 17:50</td>
+                <td>
+                  <span class="badge badge-pill badge-success">Success</span>
+                </td>
+                <td>
+                  <span class="badge badge-pill badge-success">Success</span>
+                </td>
+                <td>
+                  <a
+                    class="actionLinks"
+                    mat-raised-button
+                    routerLink="/admin/dashboard/bookings/checkout"
+                    >Checkout</a
+                  >
+                </td>
+                <td>
+                  <button
+                    data-toggle="modal"
+                    data-target="#checkout"
+                    mat-raised-button
+                  >
+                    Extend Booking
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td><a href="#">198711</a></td>
+                <td>John Cena</td>
+                <td>Executive</td>
+                <td>05/04/2019</td>
+                <td>05/05/2019</td>
+                <td>05/01/2019 20:30</td>
+                <td>
+                  <span class="badge badge-pill badge-success">Success</span>
+                </td>
+                <td>
+                  <span class="badge badge-pill badge-success">Success</span>
+                </td>
+                <td>
+                  <a class="actionLinks" mat-raised-button routerLink="."
+                    >Checkout</a
+                  >
+                </td>
+                <td>
+                  <button
+                    data-toggle="modal"
+                    data-target="#checkout"
+                    mat-raised-button
+                  >
+                    Extend Booking
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

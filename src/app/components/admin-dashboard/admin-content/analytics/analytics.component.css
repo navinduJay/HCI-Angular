@@ -8,7 +8,13 @@
 .rideone img {
   width: 70%;
 }
+#link {
+  color: white;
+}
 
+#link:hover {
+  font-size: 3rem !important;
+}
 .ridetwo img {
   width: 60%;
 }

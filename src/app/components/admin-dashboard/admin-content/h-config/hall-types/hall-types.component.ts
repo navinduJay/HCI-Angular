@@ -19,7 +19,7 @@ export class HallTypesComponent implements OnInit {
         title: "Successfully updated",
         text: "",
         icon: "success",
-        buttons: { cancel: true, confirm: true }
+        buttons: { cancel: false, confirm: true }
       });
     }
     function addHall() {
@@ -27,21 +27,20 @@ export class HallTypesComponent implements OnInit {
         title: "Successfully added!",
         text: "",
         icon: "success",
-        buttons: { cancel: true, confirm: true }
+        buttons: { cancel: false, confirm: true }
       });
     }
 
     function deleteBtn() {
       swal({
-        title: "Are you sure?",
-        text:
-          "Once deleted, you will not be able to recover this imaginary file!",
+        title: "Are you sure you want to delete?",
+        text: "",
         icon: "warning",
         buttons: { cancel: true, confirm: true },
         dangerMode: true
       }).then(willDelete => {
         if (willDelete) {
-          swal("Poof! Your imaginary file has been deleted!", {
+          swal("Successfully deleted!", {
             icon: "success"
           });
         }
@@ -49,15 +48,14 @@ export class HallTypesComponent implements OnInit {
     }
     function deleteBtn2() {
       swal({
-        title: "Are you sure?",
-        text:
-          "Once deleted, you will not be able to recover this imaginary file!",
+        title: "Are you sure you want to delete?",
+        text: "",
         icon: "warning",
         buttons: { cancel: true, confirm: true },
         dangerMode: true
       }).then(willDelete => {
         if (willDelete) {
-          swal("Poof! Your imaginary file has been deleted!", {
+          swal("Successfully deleted! ", {
             icon: "success"
           });
         }

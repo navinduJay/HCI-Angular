@@ -1,0 +1,194 @@
+<app-admin-nav></app-admin-nav> <br />
+<br />
+
+<div class="modal fade" id="addDiscount" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Add Discount or Charge Extra Amount</h3>
+        <button type="button" class="close" data-dismiss="modal">
+          &times;
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label>Booking Number<small class="req"></small></label>
+            <input
+              type="text"
+              id="gName"
+              value="199638"
+              class="form-control"
+              required
+            />
+          </div>
+
+          <br />
+          <div class="form-group">
+            <label>Invoice Number<small class="req"></small></label>
+            <input
+              type="text"
+              id="gName"
+              value="115"
+              class="form-control"
+              required
+            />
+          </div>
+          <br />
+          <div class="form-group">
+            <label>Added Date<small class="req"></small></label>
+            <input
+              type="date"
+              id="gName"
+              value=""
+              class="form-control"
+              required
+            />
+          </div>
+          <br />
+          <mat-form-field>
+            <mat-label>Payment Type</mat-label>
+            <select matNativeControl required>
+              <option value="standard">Discount </option>
+              <option value="executive">Extra Payment</option>
+            </select>
+          </mat-form-field>
+          <br />
+          <div class="form-group">
+            <label>Amount<small class="req">*</small></label>
+            <input
+              type="text"
+              id="children"
+              value=""
+              class="form-control"
+              required
+            />
+          </div>
+          <br />
+          <button
+            type="button"
+            class="btn btn-dark float-right"
+            style="width: 75px"
+            id="addBtn"
+          >
+            ADD
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MultiStep Form -->
+<div class="row">
+  <div class="col-md-12 col-md-offset-3">
+    <form id="msform">
+      <!-- fieldsets -->
+      <fieldset>
+        <button
+          type="button"
+          data-toggle="modal"
+          data-target="#addDiscount"
+          class="float-right"
+          mat-raised-button
+          color="accent"
+        >
+          + Add Discounts or Charge Extra Amount
+        </button>
+
+        <h2 class="fs-title">Hotel HABIBI</h2>
+        <h3 class="fs-subtitle">Booking Date: 04/28/2019 17:50</h3>
+
+        <div class="row">
+          <div class="container">
+            <div class="col-md-5">
+              <p class="float-left">
+                <b>Guest Name:</b>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Navindu
+                Jayatilake
+              </p>
+              <p class="float-left">
+                <b>Room:</b>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Executive
+              </p>
+              <br />
+              <p class="float-left"><b>Booking Number:</b> &nbsp; 199638</p>
+              <br />
+              <p class="float-left">
+                <b>Check in: </b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 05/01/2019
+              </p>
+              <br />
+              <p class="float-left">
+                <b>Check out:</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp; 05/03/2019
+              </p>
+              <br />
+              <p class="float-left">
+                <b>Payment status:</b> &nbsp;&nbsp;&nbsp; Success
+              </p>
+              <br />
+              <p class="float-left">
+                <b>Booking status:</b> &nbsp;&nbsp;&nbsp;&nbsp; Success
+              </p>
+              <br />
+              <br />
+              <p class="float-left">
+                <b>Adults:</b>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                2
+              </p>
+              <br />
+              <p class="float-left">
+                <b>Kids: </b>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                1
+              </p>
+              <br />
+              <p class="float-left">
+                <b>Nights:</b>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                1
+              </p>
+            </div>
+          </div>
+        </div>
+        <hr />
+
+        <p class="float-left">
+          &nbsp;&nbsp;&nbsp;&nbsp; <b>Discounts:</b>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $0
+        </p>
+        <br />
+        <p class="float-left">
+          &nbsp;&nbsp;&nbsp;&nbsp; <b>Price:</b>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          $1500
+        </p>
+        <br />
+        <br />
+        <button
+          type="button"
+          class="float-right"
+          mat-raised-button
+          color="primary"
+          id="saveEverything"
+        >
+          Save Details
+        </button>
+        <a
+          class="btn btn-dark float-left"
+          id="myA"
+          routerLink="/admin/dashboard/bookings/booked_rooms"
+          role="button"
+          >Previous</a
+        >
+      </fieldset>
+    </form>
+  </div>
+</div>
+
+<!-- /.MultiStep Form -->
+<app-footer></app-footer>
