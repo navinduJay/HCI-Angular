@@ -62,6 +62,11 @@ import { PaymentComponent } from "./components/admin-dashboard/admin-content/boo
 import { RoomConfirmComponent } from "./components/admin-dashboard/admin-content/bookings/single-booking/multi-step-form/room-confirm/room-confirm.component";
 import { HousekeeingHallsComponent } from "./components/admin-dashboard/admin-content/h-config/housekeeping/housekeeping_menu/housekeeing-halls/housekeeing-halls.component";
 import { ForgotPasswordComponent } from "./components/auth/customer/forgot-password/forgot-password.component";
+import { ProfileComponent } from './components/auth/customer/profile/profile.component';
+import { EditUserProfileComponent } from './components/auth/customer/profile/edit-user-profile/edit-user-profile.component';
+import { AuthenticationGuard } from './authentication.guard';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -116,15 +121,19 @@ import { ForgotPasswordComponent } from "./components/auth/customer/forgot-passw
     MultiStepFormComponent,
     PaymentComponent,
     RoomConfirmComponent,
-    ForgotPasswordComponent
+    ForgotPasswordComponent,
+    ProfileComponent,
+    EditUserProfileComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
-  providers: [ConfigService],
+  providers: [ConfigService, AuthenticationGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

@@ -3,3 +3,9 @@ a.active {
   border: 1px !important;
   border-radius: 10px !important;
 }
+
+.profilePic {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}

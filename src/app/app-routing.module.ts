@@ -34,6 +34,9 @@ import { SingleBookingComponent } from "./components/admin-dashboard/admin-conte
 import { PaymentComponent } from "./components/admin-dashboard/admin-content/bookings/single-booking/multi-step-form/payment/payment.component";
 import { RoomConfirmComponent } from "./components/admin-dashboard/admin-content/bookings/single-booking/multi-step-form/room-confirm/room-confirm.component";
 import { ForgotPasswordComponent } from "./components/auth/customer/forgot-password/forgot-password.component";
+import { ProfileComponent } from "./components/auth/customer/profile/profile.component";
+import { EditUserProfileComponent } from './components/auth/customer/profile/edit-user-profile/edit-user-profile.component';
+import { AuthenticationGuard } from './authentication.guard';
 
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
@@ -132,6 +135,15 @@ const routes: Routes = [
   {
     path: "user/forgot_password",
     component: ForgotPasswordComponent
+  },
+  {
+    path: "user/profile",
+    component: ProfileComponent,
+    canActivate: [AuthenticationGuard]
+  },
+  {
+    path: "user/profile/edit_profile",
+    component: EditUserProfileComponent
   },
   { path: "**", component: NotFoundComponent }
 ];

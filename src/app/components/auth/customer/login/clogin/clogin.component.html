@@ -1,7 +1,7 @@
 <app-header></app-header>
 <div class="container">
   <div>
-    <form class="form-content">
+    <form class="form-content" [formGroup]="frmLogin" (ngSubmit)="onLogin()">
       <div class="logo">
         <!-- <h1 class="heading">Login to Habibi</h1> -->
         <img class="logo" src="../../../../../assets/images/loginLogo.png" />
@@ -11,6 +11,7 @@
           <mat-form-field>
             <input
               id="uname"
+              FormControlName="upwd"
               type="email"
               matInput
               placeholder="Enter your Email"
@@ -21,6 +22,7 @@
           <mat-form-field>
             <input
               id="upass"
+              FormControlName="upass"
               type="password"
               matInput
               placeholder="Enter your password"
@@ -28,14 +30,9 @@
             />
           </mat-form-field>
           <br />
-          <input
-            type="button"
-            class="btn btn-success"
-            value="Login"
-            onclick="onLogin()"
-          />
+          <button class="btn btn-success" type="submit" (click)="onLogin()">Login</button>
           <br /><br />
-          <input type="reset" class="btn btn-danger" value="Clear" />
+          <input type="reset" class="btn btn-danger" value="Clear" id="btnLReset" />
           <br /><br />
           <p id="test"></p>
           <a routerLink="../forgot_password">Forgot password?</a><br />
@@ -56,3 +53,35 @@
     </form>
   </div>
 </div>
+
+
+<!-- <div class="container">
+    <div class="col-md-6 col-md-offset-3 loginBox">
+        <h3>Log In</h3>
+        <p *ngIf="message" class="text-center error">{{message}}</p>
+      <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+          <div class="form-group clearfix" [ngClass]="{ 'has-error': submitted && f.uname.errors }">
+              <label for="uname" class="col-md-3 col-sm-5 col-xs-12">Userid</label>
+              <div class="col-md-9 col-sm-7 col-xs-12">
+                  <input type="text" class="form-control" formControlName="uname" />
+                  <div *ngIf="submitted && f.uname.errors" class="help-block">
+                        <div *ngIf="f.uname.errors.required">Userid is required</div>
+                  </div>
+              </div>
+          </div>
+          <div class="form-group clearfix" [ngClass]="{ 'has-error': submitted && f.upwd.errors }">
+            <label for="upwd" class="col-md-3 col-sm-5 col-xs-12">Password</label>
+            <div class="col-md-9 col-sm-7 col-xs-12">
+                <input type="password" class="form-control" formControlName="upwd"/>
+                <div *ngIf="submitted && f.upwd.errors" class="help-block">
+                        <div *ngIf="f.upwd.errors.required">Password is required</div>
+                </div>
+            </div>
+          </div>
+          <div class="col-xs-12 form-group text-right">
+            <button class="btn btn-success" type="submit">Login</button>
+          </div>
+      </form>
+    </div>
+</div> -->
+<app-footer></app-footer>
