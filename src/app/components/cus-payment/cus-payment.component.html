@@ -1,0 +1,231 @@
+<app-header></app-header>
+
+<div class="container">
+  <br />
+
+  <div class="row">
+    <aside class="col-sm-6">
+      <h3>Guest Information</h3>
+
+      <article class="card">
+        <div class="card-body p-5">
+          <form role="form">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"
+                    ><i class="fa fa-envelope-square"></i
+                  ></span>
+                </div>
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  placeholder=""
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="fName">First Name</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"
+                    ><i class="fa fa-user"></i
+                  ></span>
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="fName"
+                  placeholder=""
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="lName">Last Name</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"
+                    ><i class="fa fa-user"></i
+                  ></span>
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="lName"
+                  placeholder=""
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="title">Title</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"
+                    ><i class="fa fa-user"></i
+                  ></span>
+                </div>
+                <select class="form-control" id="sel1">
+                  <option>Mr.</option>
+                  <option>Ms.</option>
+                  <option>Mrs.</option>
+                  <option>Dr.</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="pNumber">Phone number</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"
+                    ><i class="fa fa-phone"></i
+                  ></span>
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="pNumber"
+                  placeholder=""
+                />
+              </div>
+            </div>
+
+            <div class="row"></div>
+          </form>
+        </div>
+      </article>
+    </aside>
+
+    <aside class="col-sm-6">
+      <h3>Reservation Guarantee</h3>
+
+      <article class="card">
+        <div class="card-body p-5">
+          <b>Full payment will be charged on your credit card upon booking.</b>
+          <p>Our reservation system is secure</p>
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="nav-tab-card">
+              <form role="form">
+                <div class="form-group">
+                  <label for="pNumber">Card number</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"
+                        ><i class="fa fa-credit-card"></i
+                      ></span>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="pNumber"
+                      placeholder=""
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="cName">Name on card</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"
+                        ><i class="fa fa-credit-card"></i
+                      ></span>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="cName"
+                      placeholder=""
+                    />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-8">
+                    <div class="form-group">
+                      <label><span class="hidden-xs">Expiration</span> </label>
+                      <div class="input-group">
+                        <input
+                          type="number"
+                          class="form-control"
+                          placeholder="MM"
+                          name=""
+                        />
+                        <input
+                          type="number"
+                          class="form-control"
+                          placeholder="YY"
+                          name=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="form-group">
+                      <label
+                        data-toggle="tooltip"
+                        title=""
+                        data-original-title="3 digits code on back side of the card"
+                        >CVV <i class="fa fa-question-circle"></i
+                      ></label>
+                      <input type="number" class="form-control" required="" />
+                    </div>
+                    <div class="row">
+                      <div class="paymentCont">
+                        <div class="paymentWrap">
+                          <div
+                            class="btn-group paymentBtnGroup btn-group-justified"
+                            data-toggle="buttons"
+                          >
+                            <label class="btn paymentMethod active">
+                              <div class="method visa"></div>
+                              <input type="radio" name="options" checked />
+                            </label>
+                            <label class="btn paymentMethod">
+                              <div class="method master-card"></div>
+                              <input type="radio" name="options" />
+                            </label>
+                            <label class="btn paymentMethod">
+                              <div class="method amex"></div>
+                              <input type="radio" name="options" />
+                            </label>
+                            <label class="btn paymentMethod">
+                              <div class="method vishwa"></div>
+                              <input type="radio" name="options" />
+                            </label>
+                            <label class="btn paymentMethod">
+                              <div class="method ez-cash"></div>
+                              <input type="radio" name="options" />
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </article>
+    </aside>
+  </div>
+  <br />
+  <br />
+</div>
+<div class="col-md-12 text-center">
+  <button id='payment' mat-raised-button color="primary">
+    MAKE PAYMENT
+  </button>
+</div>
+
+<br /><br />
+
+<app-footer></app-footer>
