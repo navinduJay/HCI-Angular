@@ -76,6 +76,7 @@ import { FlatpickrModule } from "angularx-flatpickr";
 import { CalendarModule, DateAdapter } from "angular-calendar";
 import { adapterFactory } from "angular-calendar/date-adapters/date-fns";
 import { NgbModalModule } from "@ng-bootstrap/ng-bootstrap";
+import { CusPaymentComponent } from './components/cus-payment/cus-payment.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -135,7 +136,8 @@ import { NgbModalModule } from "@ng-bootstrap/ng-bootstrap";
     BookedRoomsComponent,
     BookedHallsComponent,
     DiscountsComponent,
-    GuestAnalyticsComponent
+    GuestAnalyticsComponent,
+    CusPaymentComponent
   ],
   imports: [
     BrowserModule,

@@ -35,11 +35,12 @@ import { PaymentComponent } from "./components/admin-dashboard/admin-content/boo
 import { RoomConfirmComponent } from "./components/admin-dashboard/admin-content/bookings/single-booking/multi-step-form/room-confirm/room-confirm.component";
 import { ForgotPasswordComponent } from "./components/auth/customer/forgot-password/forgot-password.component";
 import { ProfileComponent } from "./components/auth/customer/profile/profile.component";
-import { EditUserProfileComponent } from './components/auth/customer/profile/edit-user-profile/edit-user-profile.component';
-import { AuthenticationGuard } from './authentication.guard';
+import { EditUserProfileComponent } from "./components/auth/customer/profile/edit-user-profile/edit-user-profile.component";
+import { AuthenticationGuard } from "./authentication.guard";
 import { BookedRoomsComponent } from "./components/admin-dashboard/admin-content/bookings/booked-rooms/booked-rooms.component";
 import { BookedHallsComponent } from "./components/admin-dashboard/admin-content/bookings/booked-halls/booked-halls.component";
 import { DiscountsComponent } from "./components/admin-dashboard/admin-content/bookings/discounts/discounts.component";
+import { CusPaymentComponent } from "./components/cus-payment/cus-payment.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
@@ -163,6 +164,10 @@ const routes: Routes = [
     path: "admin/dashboard/bookings/checkout",
     component: DiscountsComponent,
     data: { animation: "isLeft" }
+  },
+  {
+    path: "user/payment",
+    component: CusPaymentComponent
   },
   { path: "**", component: NotFoundComponent }
 ];
