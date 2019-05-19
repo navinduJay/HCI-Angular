@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthenticationService } from '../../../../authentication.service';
 
 @Component({
   selector: 'app-profile',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
-  constructor() { }
+  user:string;
+  constructor(private router: Router,public authService: AuthenticationService) { }
 
   ngOnInit() {
+    this.user = localStorage.getItem('token');
   }
 
 }

@@ -1,7 +1,7 @@
 <app-header></app-header>
 <div class="container">
   <div>
-    <form class="form-content" [formGroup]="frmLogin" (ngSubmit)="onLogin()">
+    <form class="form-content" (ngSubmit)="onLogin()">
       <div class="logo">
         <!-- <h1 class="heading">Login to Habibi</h1> -->
         <img class="logo" src="../../../../../assets/images/loginLogo.png" />
@@ -9,45 +9,26 @@
       <div class="row">
         <div class="example-container col-sm-5">
           <mat-form-field>
-            <input
-              id="uname"
-              FormControlName="upwd"
-              type="email"
-              matInput
-              placeholder="Enter your Email"
-              required
-            />
+            <input id="uname" type="email" name="username" matInput placeholder="Enter your Email" required
+              [(ngModel)]="login.username" />
           </mat-form-field>
 
           <mat-form-field>
-            <input
-              id="upass"
-              FormControlName="upass"
-              type="password"
-              matInput
-              placeholder="Enter your password"
-              required
-            />
+            <input id="upwd" type="password" name="passwords" matInput placeholder="Enter your password" required
+              [(ngModel)]="login.password" />
           </mat-form-field>
           <br />
-          <button class="btn btn-success" type="submit" (click)="onLogin()">Login</button>
+          <button class="btn btn-success" type="submit">Login</button>
           <br /><br />
           <input type="reset" class="btn btn-danger" value="Clear" id="btnLReset" />
           <br /><br />
           <p id="test"></p>
           <a routerLink="../forgot_password">Forgot password?</a><br />
-          <a style="color: blue" routerLink="../register"
-            >Don't have an account?</a
-          >
+          <a style="color: blue" routerLink="../register">Don't have an account?</a>
         </div>
 
         <div class="col-sm-5">
-          <img
-            src="../../../../../assets/images/ulogin.svg"
-            height="300"
-            width="550px"
-            alt="picture"
-          />
+          <img src="../../../../../assets/images/ulogin.svg" height="300" width="550px" alt="picture" />
         </div>
       </div>
     </form>

@@ -10,10 +10,11 @@ import swal from 'sweetalert';
 })
 export class HeaderComponent implements OnInit {
   activetab = "";
-  status = localStorage.getItem('isLoggedIn');
+  status: string = localStorage.getItem('isLoggedIn');
   constructor(private router: Router,public authService: AuthenticationService) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
 
   getActiveTab(linkName: string) {
     this.activetab = linkName;
@@ -21,9 +22,8 @@ export class HeaderComponent implements OnInit {
 
   cLogout(): void{
     swal("Logged Out", "Successfully logged out", "success");
-    // swal(status);
     this.authService.logout();
-    // this.router.navigate(['home']);
+    this.router.navigate(['home']);
   }
   
 }

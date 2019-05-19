@@ -145,7 +145,8 @@ const routes: Routes = [
   },
   {
     path: "user/profile/edit_profile",
-    component: EditUserProfileComponent
+    component: EditUserProfileComponent,
+    canActivate: [AuthenticationGuard]
   },
 
   {

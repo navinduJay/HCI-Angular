@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import swal from 'sweetalert';
 import { AuthenticationService } from '../../../../../authentication.service';
-import {ILogin} from '../../../../../ilogin';
+import { ILogin } from '../../../../../ilogin';
 import { Router } from "@angular/router";
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-clogin',
@@ -12,43 +12,32 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class CloginComponent implements OnInit {
 
-  model: ILogin = {uname: "ravi@gmail.com", upwd: "habibi"};
-  frmLogin: FormGroup;
+  model: ILogin = { uname: "ravi@gmail.com", upwd: "habibi" };
   retUrl: string;
+  test: string;
+  login = {
+    username: "",
+    password: ""
+  }
 
-  constructor(private formBuilder: FormBuilder,private router: Router, public authService: AuthenticationService) { }
+  constructor(private formBuilder: FormBuilder, private router: Router, public authService: AuthenticationService) { }
 
   ngOnInit() {
-    this.frmLogin = this.formBuilder.group({
-      uname: ['', Validators.required],
-      upwd: ['', Validators.required]
-    });
-    this.retUrl = '/profile';
+    this.retUrl = '/user/profile';
     this.authService.logout();
   }
 
-  get frm() { 
-    return this.frmLogin.controls; 
-  }
-  
-  onLogin() { 
-        
-    if(this.frmLogin.invalid){
-      return;
+  onLogin() {
+    if (this.login.username == this.model.uname && this.login.password == this.model.upwd) {
+      swal("Login Succesfully", "Welcome Ravi", "success");
+      // swal(this.frm.uname.value);
+      localStorage.setItem('isLoggedIn', "true");
+      localStorage.setItem('token', this.login.username);
+      // swal(localStorage.getItem('isLoggedIn'));
+      this.router.navigate([this.retUrl]);
     }
-    else{
-      if(this.frm.uname.value == this.model.uname && this.frm.upwd.value == this.model.upwd) {
-        swal("Login Succesfully", "Welcome Ravi", "success");
-        localStorage.setItem('isLoggedIn', "true");
-        localStorage.setItem('token', this.frm.uname.value);
-        this.router.navigate([this.retUrl]);
-      }
-      else{
-        swal("Incorrect Credentials", "Please check your Username and Password", "warning");
-      }
+    else {
+      swal("Incorrect Credentials", "Please check your Username and Password", "warning");
     }
-    
-
   }
-
 }
