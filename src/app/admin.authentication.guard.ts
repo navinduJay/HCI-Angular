@@ -24,7 +24,7 @@ export class AdminAuthenticationGuard implements CanActivate {
 
   verifyLogin(url): boolean {
     if (!this.isAdminLoggedIn()) {
-      this.router.navigate(["/admin/login"]);
+      this.router.navigate(["access"]);
       return false;
     }
     return true;

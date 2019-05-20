@@ -42,6 +42,7 @@ import { BookedRoomsComponent } from "./components/admin-dashboard/admin-content
 import { BookedHallsComponent } from "./components/admin-dashboard/admin-content/bookings/booked-halls/booked-halls.component";
 import { DiscountsComponent } from "./components/admin-dashboard/admin-content/bookings/discounts/discounts.component";
 import { CusPaymentComponent } from "./components/cus-payment/cus-payment.component";
+import { AccessDeniedComponent } from "./components/access-denied/access-denied.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
@@ -63,25 +64,52 @@ const routes: Routes = [
   {
     path: "admin/dashboard/h_config",
     component: HConfigComponent,
-    data: { animation: "isRight" }
+    data: { animation: "isRight" },
+    canActivate: [AdminAuthenticationGuard]
   },
   {
     path: "admin/dashboard/h_config/room_types",
     component: RoomTypesComponent,
-    data: { animation: "isLeft" }
+    data: { animation: "isLeft" },
+    canActivate: [AdminAuthenticationGuard]
   },
 
-  { path: "admin/dashboard/bookings", component: BookingsComponent },
-  { path: "admin/dashboard/menus", component: MenusComponent },
-  { path: "admin/dashboard/guests", component: GuestsComponent },
-  { path: "admin/dashboard/cms", component: CmsComponent },
-  { path: "admin/dashboard/calendar", component: CalendarComponent },
+  {
+    path: "admin/dashboard/bookings",
+    component: BookingsComponent,
+    canActivate: [AdminAuthenticationGuard]
+  },
+  {
+    path: "admin/dashboard/menus",
+    component: MenusComponent,
+    canActivate: [AdminAuthenticationGuard]
+  },
+  {
+    path: "admin/dashboard/guests",
+    component: GuestsComponent,
+    canActivate: [AdminAuthenticationGuard]
+  },
+  {
+    path: "admin/dashboard/cms",
+    component: CmsComponent,
+    canActivate: [AdminAuthenticationGuard]
+  },
+  {
+    path: "admin/dashboard/calendar",
+    component: CalendarComponent,
+    canActivate: [AdminAuthenticationGuard]
+  },
   {
     path: "admin/update",
     component: UpdateComponent,
+    canActivate: [AdminAuthenticationGuard],
     data: { animation: "isRight" }
   },
-  { path: "user/reservation/room-list", component: RoomListComponent },
+  {
+    path: "user/reservation/room-list",
+    component: RoomListComponent,
+    canActivate: [AdminAuthenticationGuard]
+  },
   {
     path: "user/reservation/room-list/desc",
     component: RoomDescriptionComponent
@@ -89,51 +117,61 @@ const routes: Routes = [
   {
     path: "admin/dashboard/h_config/amenities",
     component: AmenitiesComponent,
+    canActivate: [AdminAuthenticationGuard],
     data: { animation: "isLeft" }
   },
   {
     path: "admin/dashboard/h_config/rooms",
     component: AdminRoomsComponent,
+    canActivate: [AdminAuthenticationGuard],
     data: { animation: "isLeft" }
   },
   {
     path: "admin/dashboard/h_config/housekeeping",
     component: HousekeepingComponent,
+    canActivate: [AdminAuthenticationGuard],
     data: { animation: "isRight" }
   },
   {
     path: "admin/dashboard/h_config/hall_types",
     component: HallTypesComponent,
+    canActivate: [AdminAuthenticationGuard],
     data: { animation: "isLeft" }
   },
   {
     path: "admin/dashboard/h_config/hall",
     component: HallsComponent,
+    canActivate: [AdminAuthenticationGuard],
     data: { animation: "isLeft" }
   },
   {
     path: "admin/dashboard/h_config/housekeeping_menu",
     component: HousekeepingMenuComponent,
+    canActivate: [AdminAuthenticationGuard],
     data: { animation: "isLeft" }
   },
   {
     path: "admin/dashboard/h_config/housekeeping_menu/housekeeping_halls",
     component: HousekeeingHallsComponent,
+    canActivate: [AdminAuthenticationGuard],
     data: { animation: "isRight" }
   },
 
   {
     path: "admin/dashboard/bookings/single_booking/payment",
     component: PaymentComponent,
+    canActivate: [AdminAuthenticationGuard],
     data: { animation: "isRight" }
   },
   {
     path: "admin/dashboard/bookings/single_booking",
-    component: SingleBookingComponent
+    component: SingleBookingComponent,
+    canActivate: [AdminAuthenticationGuard]
   },
   {
     path: "admin/dashboard/bookings/single_booking/confirm_room",
     component: RoomConfirmComponent,
+    canActivate: [AdminAuthenticationGuard],
     data: { animation: "isRight" }
   },
 
@@ -155,21 +193,28 @@ const routes: Routes = [
   {
     path: "admin/dashboard/bookings/booked_rooms",
     component: BookedRoomsComponent,
+    canActivate: [AdminAuthenticationGuard],
     data: { animation: "isRight" }
   },
   {
     path: "admin/dashboard/bookings/booked_halls",
     component: BookedHallsComponent,
+    canActivate: [AdminAuthenticationGuard],
     data: { animation: "isRight" }
   },
   {
     path: "admin/dashboard/bookings/checkout",
     component: DiscountsComponent,
+    canActivate: [AdminAuthenticationGuard],
     data: { animation: "isLeft" }
   },
   {
     path: "user/payment",
     component: CusPaymentComponent
+  },
+  {
+    path: "access",
+    component: AccessDeniedComponent
   },
   { path: "**", component: NotFoundComponent }
 ];

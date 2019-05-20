@@ -1,0 +1,19 @@
+#forbiddenImg {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  height: 150px;
+  width: 150px;
+  margin-top: 10%;
+}
+
+.btn {
+  background-color: black !important;
+
+  margin-left: 590px !important;
+  margin-right: auto !important;
+}
+
+.btn:hover {
+  border: transparent;
+}
