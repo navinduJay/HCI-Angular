@@ -1,5 +1,7 @@
 import { Component, OnInit } from "@angular/core";
-import { RouterOutlet } from "@angular/router";
+
+import { Router } from "@angular/router";
+import { AuthenticationService } from "../../authentication.service";
 
 @Component({
   selector: "app-admin-dashboard",
@@ -7,7 +9,13 @@ import { RouterOutlet } from "@angular/router";
   styleUrls: ["./admin-dashboard.component.css"]
 })
 export class AdminDashboardComponent implements OnInit {
-  constructor() {}
+  user: string;
+  constructor(
+    private router: Router,
+    public authService: AuthenticationService
+  ) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.user = localStorage.getItem("token");
+  }
 }

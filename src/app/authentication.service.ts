@@ -1,15 +1,19 @@
-import { Injectable } from '@angular/core';
-import {ILogin} from './ilogin';
+import { Injectable } from "@angular/core";
+import { ILogin } from "./ilogin";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root"
 })
 export class AuthenticationService {
+  constructor() {}
 
-  constructor() { }
+  logout(): void {
+    localStorage.setItem("isLoggedIn", "false");
+    localStorage.removeItem("token");
+  }
 
-  logout():void {
-    localStorage.setItem('isLoggedIn', "false");
-    localStorage.removeItem('token');
+  adminLogout(): void {
+    localStorage.setItem("isAdminLoggedIn", "false");
+    localStorage.removeItem("token");
   }
 }

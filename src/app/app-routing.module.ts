@@ -37,6 +37,7 @@ import { ForgotPasswordComponent } from "./components/auth/customer/forgot-passw
 import { ProfileComponent } from "./components/auth/customer/profile/profile.component";
 import { EditUserProfileComponent } from "./components/auth/customer/profile/edit-user-profile/edit-user-profile.component";
 import { AuthenticationGuard } from "./authentication.guard";
+import { AdminAuthenticationGuard } from "./admin.authentication.guard";
 import { BookedRoomsComponent } from "./components/admin-dashboard/admin-content/bookings/booked-rooms/booked-rooms.component";
 import { BookedHallsComponent } from "./components/admin-dashboard/admin-content/bookings/booked-halls/booked-halls.component";
 import { DiscountsComponent } from "./components/admin-dashboard/admin-content/bookings/discounts/discounts.component";
@@ -56,7 +57,8 @@ const routes: Routes = [
   {
     path: "admin/dashboard",
     component: AdminDashboardComponent,
-    data: { animation: "isLeft" }
+    data: { animation: "isLeft" },
+    canActivate: [AdminAuthenticationGuard]
   },
   {
     path: "admin/dashboard/h_config",

@@ -2,7 +2,11 @@
   <a class="navbar-brand" href="#">
     <b> Hotel HABIBI <small class="strong">ADMIN PANEL</small> </b></a
   >
-  <a class="navbar-brand hvr-underline-from-left" id="dashboard" routerLink="/admin/dashboard">
+  <a
+    class="navbar-brand hvr-underline-from-left"
+    id="dashboard"
+    routerLink="/admin/dashboard"
+  >
     <b> <small class="dashboard">Dashboard</small> </b></a
   >
   <div class="collapse navbar-collapse " id="navbarSupportedContent">
@@ -22,7 +26,25 @@
       </li>
 
       <li class="nav-item">
-        <button class="btn btn-light">Logout</button>
+        <div *ngIf="status == 'true'; then logout; else login"></div>
+        <ng-template #login>
+          <a
+            role=" button"
+            class="btn btn-primary authBtn"
+            routerLink="/admin/login"
+            >Login</a
+          >
+        </ng-template>
+        <ng-template #logout>
+          <a
+            role=" button"
+            class="btn btn-primary authBtn"
+            href="javascript:void(0)"
+            (click)="cLogout()"
+          >
+            Logout</a
+          >
+        </ng-template>
       </li>
     </ul>
   </div>

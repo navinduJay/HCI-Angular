@@ -5,22 +5,29 @@
       <h1 class="text-center">Welcome to Admin Panel</h1>
       <h3 class="text-center">Hotel Habibi</h3>
 
-      <form>
+      <form (ngSubmit)="onLogin()">
         <div class="form-group">
           <label>Username</label>
           <input
+            id="username"
+            name="username"
             type="text"
             class="form-control"
             placeholder="Enter username"
+            required
+            [(ngModel)]="adminLogin.username"
           />
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1">Password</label>
           <input
+            id="password"
+            name="password"
             type="password"
             class="form-control"
             id="exampleInputPassword1"
             placeholder="Password"
+            [(ngModel)]="adminLogin.password"
           />
         </div>
 

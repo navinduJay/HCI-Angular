@@ -1,4 +1,4 @@
 export interface ILogin {
-    uname: string;
-    upwd: string;
+  uname: string;
+  upwd: string;
 }

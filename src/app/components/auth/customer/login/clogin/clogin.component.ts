@@ -1,43 +1,59 @@
-import { Component, OnInit } from '@angular/core';
-import swal from 'sweetalert';
-import { AuthenticationService } from '../../../../../authentication.service';
-import { ILogin } from '../../../../../ilogin';
+import { Component, OnInit } from "@angular/core";
+import swal from "sweetalert";
+import { AuthenticationService } from "../../../../../authentication.service";
+import { ILogin } from "../../../../../ilogin";
 import { Router } from "@angular/router";
-import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
+import {
+  FormBuilder,
+  FormGroup,
+  Validators,
+  FormControl
+} from "@angular/forms";
 
 @Component({
-  selector: 'app-clogin',
-  templateUrl: './clogin.component.html',
-  styleUrls: ['./clogin.component.css']
+  selector: "app-clogin",
+  templateUrl: "./clogin.component.html",
+  styleUrls: ["./clogin.component.css"]
 })
 export class CloginComponent implements OnInit {
-
   model: ILogin = { uname: "ravi@gmail.com", upwd: "habibi" };
   retUrl: string;
   test: string;
   login = {
     username: "",
     password: ""
-  }
+  };
 
-  constructor(private formBuilder: FormBuilder, private router: Router, public authService: AuthenticationService) { }
+  constructor(
+    private formBuilder: FormBuilder,
+    private router: Router,
+    public authService: AuthenticationService
+  ) {}
 
   ngOnInit() {
-    this.retUrl = '/user/profile';
+    this.retUrl = "/user/profile";
     this.authService.logout();
   }
 
   onLogin() {
-    if (this.login.username == this.model.uname && this.login.password == this.model.upwd) {
+    if (
+      this.login.username == this.model.uname &&
+      this.login.password == this.model.upwd
+    ) {
       swal("Login Succesfully", "Welcome Ravi", "success");
       // swal(this.frm.uname.value);
-      localStorage.setItem('isLoggedIn', "true");
-      localStorage.setItem('token', this.login.username);
+      localStorage.setItem("isLoggedIn", "true");
+      localStorage.setItem("token", this.login.username);
       // swal(localStorage.getItem('isLoggedIn'));
       this.router.navigate([this.retUrl]);
-    }
-    else {
-      swal("Incorrect Credentials", "Please check your Username and Password", "warning");
+    } else if (this.login.username == "" || this.login.password == "") {
+      swal("Please enter your username and password", "", "warning");
+    } else {
+      swal(
+        "Incorrect Credentials",
+        "Please check your Username and Password",
+        "warning"
+      );
     }
   }
 }
