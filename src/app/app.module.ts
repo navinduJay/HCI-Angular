@@ -78,6 +78,8 @@ import { adapterFactory } from "angular-calendar/date-adapters/date-fns";
 import { NgbModalModule } from "@ng-bootstrap/ng-bootstrap";
 import { CusPaymentComponent } from './components/cus-payment/cus-payment.component';
 import { AccessDeniedComponent } from './components/access-denied/access-denied.component';
+import { AddMenuItemsComponent } from './components/admin-dashboard/admin-content/menus/add-menu-items/add-menu-items.component';
+import { ViewMenuComponent } from './components/admin-dashboard/admin-content/menus/view-menu/view-menu.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -139,7 +141,9 @@ import { AccessDeniedComponent } from './components/access-denied/access-denied.
     DiscountsComponent,
     GuestAnalyticsComponent,
     CusPaymentComponent,
-    AccessDeniedComponent
+    AccessDeniedComponent,
+    AddMenuItemsComponent,
+    ViewMenuComponent
   ],
   imports: [
     BrowserModule,

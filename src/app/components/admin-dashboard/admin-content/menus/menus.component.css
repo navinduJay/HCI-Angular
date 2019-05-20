@@ -1,0 +1,45 @@
+body {
+  background: #eee;
+}
+span {
+  font-size: 15px;
+}
+a {
+  text-decoration: none;
+  color: white !important;
+}
+.box {
+  padding: 60px 0px;
+}
+
+.box-part {
+  background: #fff;
+  border-radius: 50px;
+  padding: 60px 10px;
+  margin: 30px 0px;
+  border: 1px solid transparent;
+}
+.text {
+  margin: 20px 0px;
+}
+
+.fa {
+  color: #4183d7;
+}
+
+.box-part {
+  background-color: #f3f9fb;
+}
+
+.dBoardImages {
+  height: 100px;
+  weight: 100px;
+}
+
+.configBtn {
+  width: 100px !important;
+}
+
+#dbLink {
+  color: blue !important;
+}

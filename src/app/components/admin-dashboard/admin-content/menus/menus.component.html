@@ -1,3 +1,73 @@
-<p>
-  menus works!
-</p>
+<app-admin-nav></app-admin-nav>
+
+<main data-router-wrapper>
+  <section data-router-view="h_config" class="h_config">
+    <div class="h_config-content">
+      <div class="h_config-presentation">
+        <div class="box">
+          <div class="container">
+            <h4>
+              <small>
+                <a id="dbLink" routerLink="/admin/dashboard">Dashboard</a>
+              </small>
+              /
+              <strong>Menu</strong>
+            </h4>
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="box-part text-center">
+                  <img
+                    class="dBoardImages"
+                    src="../../../../assets/images/rm.svg"
+                    alt="pic"
+                  />
+
+                  <div class="title">
+                    <h4>Menu Management</h4>
+                  </div>
+
+                  <div class="text">
+                    <span>Add Menu Types and Menu Items</span>
+                  </div>
+
+                  <a
+                    routerLink="/admin/dashboard/menu/add_items"
+                    class="btn btn-dark configBtn"
+                    role="button"
+                    >Edit</a
+                  >
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="box-part text-center">
+                  <img
+                    class="dBoardImages"
+                    src="../../../../assets/images/rm.svg"
+                    alt="pic"
+                  />
+
+                  <div class="title">
+                    <h4>View Menu</h4>
+                  </div>
+
+                  <div class="text">
+                    <span>View added menu types and menu items</span>
+                  </div>
+
+                  <a
+                    class="btn btn-dark configBtn"
+                    routerLink="/admin/dashboard/menu/view_menu"
+                    role="button"
+                    >Edit</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<app-footer></app-footer>

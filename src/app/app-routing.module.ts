@@ -43,6 +43,8 @@ import { BookedHallsComponent } from "./components/admin-dashboard/admin-content
 import { DiscountsComponent } from "./components/admin-dashboard/admin-content/bookings/discounts/discounts.component";
 import { CusPaymentComponent } from "./components/cus-payment/cus-payment.component";
 import { AccessDeniedComponent } from "./components/access-denied/access-denied.component";
+import { AddMenuItemsComponent } from "./components/admin-dashboard/admin-content/menus/add-menu-items/add-menu-items.component";
+import { ViewMenuComponent } from "./components/admin-dashboard/admin-content/menus/view-menu/view-menu.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
@@ -208,6 +210,19 @@ const routes: Routes = [
     canActivate: [AdminAuthenticationGuard],
     data: { animation: "isLeft" }
   },
+  {
+    path: "admin/dashboard/menu/add_items",
+    component: AddMenuItemsComponent,
+    canActivate: [AdminAuthenticationGuard],
+    data: { animation: "isLeft" }
+  },
+  {
+    path: "admin/dashboard/menu/view_menu",
+    component: ViewMenuComponent,
+    canActivate: [AdminAuthenticationGuard],
+    data: { animation: "isLeft" }
+  },
+
   {
     path: "user/payment",
     component: CusPaymentComponent
