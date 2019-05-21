@@ -24,7 +24,7 @@ export class AuthenticationGuard implements CanActivate {
 
   verifyLogin(url): boolean {
     if (!this.isLoggedIn()) {
-      this.router.navigate(["/user/login"]);
+      this.router.navigate(["access_denied"]);
       return false;
     }
     return true;

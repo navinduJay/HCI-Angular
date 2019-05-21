@@ -80,6 +80,8 @@ import { CusPaymentComponent } from './components/cus-payment/cus-payment.compon
 import { AccessDeniedComponent } from './components/access-denied/access-denied.component';
 import { AddMenuItemsComponent } from './components/admin-dashboard/admin-content/menus/add-menu-items/add-menu-items.component';
 import { ViewMenuComponent } from './components/admin-dashboard/admin-content/menus/view-menu/view-menu.component';
+import { PreviousReservationsComponent } from './components/auth/customer/profile/previous-reservations/previous-reservations.component';
+import { UserAccessDeniedComponent } from './components/user-access-denied/user-access-denied.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -143,7 +145,9 @@ import { ViewMenuComponent } from './components/admin-dashboard/admin-content/me
     CusPaymentComponent,
     AccessDeniedComponent,
     AddMenuItemsComponent,
-    ViewMenuComponent
+    ViewMenuComponent,
+    PreviousReservationsComponent,
+    UserAccessDeniedComponent
   ],
   imports: [
     BrowserModule,

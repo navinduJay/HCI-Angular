@@ -1,4 +1,4 @@
-import { NgModule } from "@angular/core";
+import { NgModule, Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { RouterModule, Routes } from "@angular/router";
 import { LoginComponent } from "./components/auth/admin/login/login.component";
@@ -45,6 +45,8 @@ import { CusPaymentComponent } from "./components/cus-payment/cus-payment.compon
 import { AccessDeniedComponent } from "./components/access-denied/access-denied.component";
 import { AddMenuItemsComponent } from "./components/admin-dashboard/admin-content/menus/add-menu-items/add-menu-items.component";
 import { ViewMenuComponent } from "./components/admin-dashboard/admin-content/menus/view-menu/view-menu.component";
+import { PreviousReservationsComponent } from "./components/auth/customer/profile/previous-reservations/previous-reservations.component";
+import { UserAccessDeniedComponent } from "./components/user-access-denied/user-access-denied.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
@@ -230,6 +232,15 @@ const routes: Routes = [
   {
     path: "access",
     component: AccessDeniedComponent
+  },
+  {
+    path: "user/profile/previous_reservations",
+    component: PreviousReservationsComponent,
+    canActivate: [AuthenticationGuard]
+  },
+  {
+    path: "access_denied",
+    component: UserAccessDeniedComponent
   },
   { path: "**", component: NotFoundComponent }
 ];
