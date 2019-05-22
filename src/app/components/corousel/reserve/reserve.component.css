@@ -54,11 +54,12 @@ h5 {
 }
 
 .btn {
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 10px;
+  margin-right: 300px !important;
+  margin-top: 35px;
   padding-bottom: 10px;
   border-radius: 50px;
+  width:180px
+ 
 }
 .btn.btn-outline-white {
   border: 2px solid #fff;
