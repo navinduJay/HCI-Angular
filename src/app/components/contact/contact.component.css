@@ -54,3 +54,7 @@ h1 {
 .details {
   color: white;
 }
+
+#contactBtn {
+  width: 120px;
+}

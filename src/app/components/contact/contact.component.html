@@ -24,6 +24,7 @@ ner contact"
               id="fname"
               placeholder="Enter Full Name"
               name="fname"
+              required
             />
           </div>
         </div>
@@ -39,6 +40,7 @@ ner contact"
               id="email"
               placeholder="Enter Email"
               name="email"
+              required
             />
           </div>
         </div>
@@ -52,12 +54,13 @@ ner contact"
               rows="5"
               id="comment"
               placeholder="Type something..."
+              required
             ></textarea>
           </div>
         </div>
         <div class="form-group">
           <div class="col-sm-offset-2 col-sm-10">
-            <button type="submit" class="btn btn-default">
+            <button id="contactBtn" type="submit" class="btn btn-default">
               {{ contact.form.btn }}
             </button>
           </div>
