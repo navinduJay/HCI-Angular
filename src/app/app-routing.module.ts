@@ -47,6 +47,7 @@ import { AddMenuItemsComponent } from "./components/admin-dashboard/admin-conten
 import { ViewMenuComponent } from "./components/admin-dashboard/admin-content/menus/view-menu/view-menu.component";
 import { PreviousReservationsComponent } from "./components/auth/customer/profile/previous-reservations/previous-reservations.component";
 import { UserAccessDeniedComponent } from "./components/user-access-denied/user-access-denied.component";
+import { CheckAvailabilityComponent } from './components/check-availability/check-availability.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
@@ -112,7 +113,7 @@ const routes: Routes = [
   {
     path: "user/reservation/room-list",
     component: RoomListComponent,
-    canActivate: [AdminAuthenticationGuard]
+    canActivate: [AuthenticationGuard]
   },
   {
     path: "user/reservation/room-list/desc",
@@ -241,6 +242,10 @@ const routes: Routes = [
   {
     path: "access_denied",
     component: UserAccessDeniedComponent
+  },
+  {
+    path: "home/check_availability",
+    component: CheckAvailabilityComponent
   },
   { path: "**", component: NotFoundComponent }
 ];

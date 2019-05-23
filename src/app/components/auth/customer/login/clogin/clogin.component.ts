@@ -31,7 +31,7 @@ export class CloginComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.retUrl = "/user/profile";
+    this.retUrl = "/home";
     this.authService.logout();
   }
 
@@ -40,11 +40,9 @@ export class CloginComponent implements OnInit {
       this.login.username == this.model.uname &&
       this.login.password == this.model.upwd
     ) {
-      swal("Login Succesfully", "Welcome Ravi", "success");
-      // swal(this.frm.uname.value);
+      swal("Login Succesfull", "Welcome Ravi", "success");
       localStorage.setItem("isLoggedIn", "true");
       localStorage.setItem("token", this.login.username);
-      // swal(localStorage.getItem('isLoggedIn'));
       this.router.navigate([this.retUrl]);
     } else if (this.login.username == "" || this.login.password == "") {
       swal("Please enter your username and password", "", "warning");
