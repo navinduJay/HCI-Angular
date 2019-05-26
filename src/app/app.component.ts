@@ -6,10 +6,7 @@ import { slider } from "./animations";
   selector: "app-root",
   templateUrl: "./app.component.html",
   styleUrls: ["./app.component.css"],
-  animations: [
-    slider
-    // animation triggers go here
-  ]
+  animations: [slider]
 })
 export class AppComponent {
   title = "Hotel";

@@ -1,0 +1,24 @@
+.card-pricing.popular {
+  z-index: 1;
+  border: 3px solid #007bff !important;
+}
+.card-pricing .list-unstyled li {
+  padding: 0.5rem 0;
+  color: #6c757d;
+}
+
+#offers {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+}
+
+.date {
+  color: #77328b;
+  font-style: italic;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.container {
+  background-color: #f2f2f2;
+}
