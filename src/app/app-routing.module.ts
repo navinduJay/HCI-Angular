@@ -52,7 +52,7 @@ import { OffersComponent } from "./components/offers/offers.component";
 import { InvoiceComponent } from "./components/invoice/invoice.component";
 import { RoomSearchComponent } from "./components/reservation/room-search/room-search.component";
 import { HallDetailsComponent } from "./components/reservation/hall-details/hall-details.component";
-import { CustomerMenuComponent } from './components/customer-menu/customer-menu/customer-menu.component';
+import { CustomerMenuComponent } from "./components/customer-menu/customer-menu/customer-menu.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
@@ -264,7 +264,7 @@ const routes: Routes = [
   {
     path: "user/room-search",
     component: RoomSearchComponent,
-    data: { animation: "isLeft" }
+    data: { animation: "isRight" }
   },
 
   {
