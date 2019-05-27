@@ -24,7 +24,7 @@ export class UpdateComponent implements OnInit {
       role != "" &&
       mobile != ""
     ) {
-      swal("Thank you for your feedback!", "", "success");
+      swal("Details updated successfully!", "", "success");
     } else {
       swal({
         title: "Please fill all the details!",
