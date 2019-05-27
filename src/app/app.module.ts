@@ -7,7 +7,6 @@ import { CorouselComponent } from "./components/corousel/corousel.component";
 import { RoomsComponent } from "./components/rooms/rooms.component";
 import { AuthComponent } from "./components/auth/auth.component";
 
-import { RegisterComponent } from "./components/auth/admin/register/register.component";
 import { LoginComponent } from "./components/auth/admin/login/login.component";
 import { NotFoundComponent } from "./components/not-found/not-found.component";
 import { AppRoutingModule } from "./app-routing.module";
@@ -62,11 +61,11 @@ import { PaymentComponent } from "./components/admin-dashboard/admin-content/boo
 import { RoomConfirmComponent } from "./components/admin-dashboard/admin-content/bookings/single-booking/multi-step-form/room-confirm/room-confirm.component";
 import { HousekeeingHallsComponent } from "./components/admin-dashboard/admin-content/h-config/housekeeping/housekeeping_menu/housekeeing-halls/housekeeing-halls.component";
 import { ForgotPasswordComponent } from "./components/auth/customer/forgot-password/forgot-password.component";
-import { ProfileComponent } from './components/auth/customer/profile/profile.component';
-import { EditUserProfileComponent } from './components/auth/customer/profile/edit-user-profile/edit-user-profile.component';
-import { AuthenticationGuard } from './authentication.guard';
-import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-import { RouterModule } from '@angular/router';
+import { ProfileComponent } from "./components/auth/customer/profile/profile.component";
+import { EditUserProfileComponent } from "./components/auth/customer/profile/edit-user-profile/edit-user-profile.component";
+import { AuthenticationGuard } from "./authentication.guard";
+import { ReactiveFormsModule, FormsModule } from "@angular/forms";
+import { RouterModule } from "@angular/router";
 import { BookedRoomsComponent } from "./components/admin-dashboard/admin-content/bookings/booked-rooms/booked-rooms.component";
 import { BookedHallsComponent } from "./components/admin-dashboard/admin-content/bookings/booked-halls/booked-halls.component";
 import { DiscountsComponent } from "./components/admin-dashboard/admin-content/bookings/discounts/discounts.component";
@@ -76,24 +75,23 @@ import { FlatpickrModule } from "angularx-flatpickr";
 import { CalendarModule, DateAdapter } from "angular-calendar";
 import { adapterFactory } from "angular-calendar/date-adapters/date-fns";
 import { NgbModalModule } from "@ng-bootstrap/ng-bootstrap";
-import { CusPaymentComponent } from './components/cus-payment/cus-payment.component';
-import { AccessDeniedComponent } from './components/access-denied/access-denied.component';
-import { AddMenuItemsComponent } from './components/admin-dashboard/admin-content/menus/add-menu-items/add-menu-items.component';
-import { ViewMenuComponent } from './components/admin-dashboard/admin-content/menus/view-menu/view-menu.component';
-import { PreviousReservationsComponent } from './components/auth/customer/profile/previous-reservations/previous-reservations.component';
-import { UserAccessDeniedComponent } from './components/user-access-denied/user-access-denied.component';
-import { OffersComponent } from './components/offers/offers.component';
-import { InvoiceComponent } from './components/invoice/invoice.component';
-import { RoomTypesBarComponent } from './components/reservation/room-types-bar/room-types-bar.component';
-import { RoomSearchComponent } from './components/reservation/room-search/room-search.component';
-import { HallDetailsComponent } from './components/reservation/hall-details/hall-details.component';
+import { CusPaymentComponent } from "./components/cus-payment/cus-payment.component";
+import { AccessDeniedComponent } from "./components/access-denied/access-denied.component";
+import { AddMenuItemsComponent } from "./components/admin-dashboard/admin-content/menus/add-menu-items/add-menu-items.component";
+import { ViewMenuComponent } from "./components/admin-dashboard/admin-content/menus/view-menu/view-menu.component";
+import { PreviousReservationsComponent } from "./components/auth/customer/profile/previous-reservations/previous-reservations.component";
+import { UserAccessDeniedComponent } from "./components/user-access-denied/user-access-denied.component";
+import { OffersComponent } from "./components/offers/offers.component";
+import { InvoiceComponent } from "./components/invoice/invoice.component";
+import { RoomTypesBarComponent } from "./components/reservation/room-types-bar/room-types-bar.component";
+import { RoomSearchComponent } from "./components/reservation/room-search/room-search.component";
+import { HallDetailsComponent } from "./components/reservation/hall-details/hall-details.component";
 @NgModule({
   declarations: [
     AppComponent,
     CorouselComponent,
     RoomsComponent,
     AuthComponent,
-    RegisterComponent,
     NotFoundComponent,
     LoginComponent,
     AboutComponent,

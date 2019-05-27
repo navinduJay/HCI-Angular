@@ -78,7 +78,7 @@ export const configuration = {
         image: "../../../../assets/images/conf.png",
         title: "Hotel Configuration",
         desc:
-          "Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.",
+          "Edit room types, rooms, hall types, halls, amenities and house keeping status of the hotel.",
         btn: "Edit"
       },
       {
@@ -86,7 +86,7 @@ export const configuration = {
         image: "../../../../assets/images/bookings.svg",
         title: "Bookings",
         desc:
-          "Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.",
+          "To perform functions such as Edit bookings, check bookings, checkout a customer, extend bookings.",
         btn: "Edit"
       },
       {
@@ -94,7 +94,7 @@ export const configuration = {
         image: "../../../../assets/images/menu.svg",
         title: "Menus",
         desc:
-          "Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.",
+          "Add menu items, delete and update menu items of the menu item list and view added menu items",
         btn: "Edit"
       },
       {
@@ -102,23 +102,24 @@ export const configuration = {
         image: "../../../../assets/images/guests.svg",
         title: "Guests",
         desc:
-          "Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.",
+          "To perform functions such as adding a guest, edit guest(booked) information, ban guests and remove guests",
         btn: "Edit"
       },
       {
-        url: "cms",
-        image: "../../../../assets/images/content.svg",
-        title: "Content Management",
+        url: "edit_profile",
+        image: "../../../../assets/images/admin97.png",
+        title: "Profile",
         desc:
-          "Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.",
+          "To manage admin profile details by editing admin profile and can view edited admin profile",
         btn: "Edit"
       },
+
       {
         url: "calendar",
         image: "../../../../assets/images/calendar.svg",
         title: "Availability Calendar",
         desc:
-          "Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.",
+          "To perform functions such as adding events to calendar and view them as per their requirement",
         btn: "Edit"
       }
     ]

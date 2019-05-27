@@ -4,7 +4,7 @@ import { RouterModule, Routes } from "@angular/router";
 import { LoginComponent } from "./components/auth/admin/login/login.component";
 import { AppComponent } from "./app.component";
 import { NotFoundComponent } from "./components/not-found/not-found.component";
-import { RegisterComponent } from "./components/auth/admin/register/register.component";
+
 import { AboutComponent } from "./components/about/about.component";
 import { ContactComponent } from "./components/contact/contact.component";
 import { HomeComponent } from "./components/home/home.component";
@@ -50,8 +50,8 @@ import { UserAccessDeniedComponent } from "./components/user-access-denied/user-
 import { CheckAvailabilityComponent } from "./components/check-availability/check-availability.component";
 import { OffersComponent } from "./components/offers/offers.component";
 import { InvoiceComponent } from "./components/invoice/invoice.component";
-import { RoomSearchComponent } from './components/reservation/room-search/room-search.component';
-import { HallDetailsComponent } from './components/reservation/hall-details/hall-details.component';
+import { RoomSearchComponent } from "./components/reservation/room-search/room-search.component";
+import { HallDetailsComponent } from "./components/reservation/hall-details/hall-details.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
@@ -59,12 +59,12 @@ const routes: Routes = [
   { path: "about", component: AboutComponent },
   { path: "room-list", component: RoomListComponent },
   { path: "admin/login", component: LoginComponent },
-  { path: "register", component: RegisterComponent },
+
   { path: "contact", component: ContactComponent },
-  { path: "admin/register", component: RegisterComponent },
+
   { path: "user/register", component: CregisterComponent },
   { path: "user/login", component: CloginComponent },
-  { path: "admin/edit_profile", component: EditProfileComponent },
+  { path: "admin/dashboard/edit_profile", component: EditProfileComponent },
   {
     path: "admin/dashboard",
     component: AdminDashboardComponent,
@@ -229,7 +229,8 @@ const routes: Routes = [
 
   {
     path: "user/payment",
-    component: CusPaymentComponent
+    component: CusPaymentComponent,
+    data: { animation: "isRight" }
   },
   {
     path: "access",
@@ -250,7 +251,8 @@ const routes: Routes = [
   },
   {
     path: "user/payment/offers",
-    component: OffersComponent
+    component: OffersComponent,
+    data: { animation: "isLeft" }
   },
   {
     path: "home/check_availability",
@@ -259,7 +261,8 @@ const routes: Routes = [
 
   {
     path: "user/room-search",
-    component: RoomSearchComponent
+    component: RoomSearchComponent,
+    data: { animation: "isLeft" }
   },
 
   {
