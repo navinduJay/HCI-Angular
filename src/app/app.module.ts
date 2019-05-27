@@ -82,6 +82,8 @@ import { AddMenuItemsComponent } from './components/admin-dashboard/admin-conten
 import { ViewMenuComponent } from './components/admin-dashboard/admin-content/menus/view-menu/view-menu.component';
 import { PreviousReservationsComponent } from './components/auth/customer/profile/previous-reservations/previous-reservations.component';
 import { UserAccessDeniedComponent } from './components/user-access-denied/user-access-denied.component';
+import { OffersComponent } from './components/offers/offers.component';
+import { InvoiceComponent } from './components/invoice/invoice.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -147,7 +149,9 @@ import { UserAccessDeniedComponent } from './components/user-access-denied/user-
     AddMenuItemsComponent,
     ViewMenuComponent,
     PreviousReservationsComponent,
-    UserAccessDeniedComponent
+    UserAccessDeniedComponent,
+    OffersComponent,
+    InvoiceComponent
   ],
   imports: [
     BrowserModule,

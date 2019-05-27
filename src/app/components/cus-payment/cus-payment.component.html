@@ -1,5 +1,5 @@
 <app-header></app-header>
-
+<div class="container-fluid"></div>
 <div class="container">
   <br />
 
@@ -219,11 +219,27 @@
   </div>
   <br />
   <br />
-</div>
-<div class="col-md-12 text-center">
-  <button id='payment' mat-raised-button color="primary">
-    MAKE PAYMENT
-  </button>
+  <div class="col-md-12 text-right">
+    <button
+      routerLink="."
+      role="button"
+      id="payment"
+      mat-raised-button
+      color="primary"
+    >
+      MAKE PAYMENT
+    </button>
+    <button
+      routerLink="/user/payment/offers"
+      role="button"
+      class="float-left"
+      id="payment"
+      mat-raised-button
+      color="primary"
+    >
+      MEMBER OFFERS
+    </button>
+  </div>
 </div>
 
 <br /><br />

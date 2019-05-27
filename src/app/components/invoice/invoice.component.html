@@ -1,0 +1,111 @@
+<app-header></app-header>
+<br />
+
+<div class="container">
+  <h1 class="text-center" style="font-style: italic">INVOICE</h1>
+  <div class="invoice-box">
+    <table cellpadding="0" cellspacing="0">
+      <tr class="top">
+        <td colspan="2">
+          <table>
+            <tr>
+              <td class="title">
+                <img src="" style="width:100%; max-width:300px;" />
+                <h3>Hotel Habibi</h3>
+              </td>
+
+              <td>
+                Invoice #: 123<br />
+                Created: May 1, 2019<br />
+                Due: June 1, 2019
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr class="information">
+        <td colspan="2">
+          <table>
+            <tr>
+              <td>
+                77 Galle Rd, <br />
+                Colombo 00300,<br />
+                Sri Lanka
+              </td>
+
+              <td>
+                SLIIT.<br />
+                Yohan Fernando<br />
+                yohan@gmail.com
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr class="heading">
+        <td>
+          Payment Method
+        </td>
+
+        <td>
+          Check #
+        </td>
+      </tr>
+
+      <tr class="details">
+        <td>
+          VISA
+        </td>
+
+        <td>
+          $1000
+        </td>
+      </tr>
+
+      <tr class="heading">
+        <td>
+          Loyalty Scheme
+        </td>
+
+        <td>
+          Price
+        </td>
+      </tr>
+
+      <tr class="item">
+        <td>
+          Platinum
+        </td>
+
+        <td>
+          $500.00
+        </td>
+      </tr>
+
+      <tr class="total">
+        <td>
+          <a
+            href="../../../assets/files/hotel-habibi-invoice-yohan.pdf"
+            mat-raised-button
+            target="_blank"
+            color="primary"
+          >
+            Download as A PDF
+          </a>
+        </td>
+
+        <td>
+          Total: $500.00
+        </td>
+      </tr>
+    </table>
+
+    <button id="paymentBtn" class="btn btn-primary float-right">
+      CONFIRM PAYMENT
+    </button>
+  </div>
+</div>
+
+<app-footer></app-footer>
