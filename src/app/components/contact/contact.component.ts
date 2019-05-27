@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { ConfigService } from "../../config.service";
-
+import swal from "sweetalert";
 @Component({
   selector: "app-contact",
   templateUrl: "./contact.component.html",
@@ -12,6 +12,11 @@ export class ContactComponent implements OnInit {
 
   ngOnInit() {
     this.contact = this.getContact();
+    document.getElementById("contactBtn").addEventListener("click", contactBtn);
+
+    function contactBtn() {
+      swal("Thank you for your feedback.", "", "success");
+    }
   }
 
   getContact() {

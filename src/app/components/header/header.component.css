@@ -1,5 +1,5 @@
 a.active {
-  background-color: #878787 !important;
+  background-color: #e4e4e4 !important;
   border: 1px !important;
   border-radius: 10px !important;
 }
@@ -10,7 +10,7 @@ a.active {
   height: 40px;
 }
 .navbar {
-  background-color: #e4e4e4 !important;
+  background-color: #f8f9fa !important;
 }
 #navbar {
   overflow: hidden;
