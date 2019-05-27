@@ -1,6 +1,6 @@
 <app-header></app-header>
 <div style="margin-left: 150px">
-<div style="float: left; width: 60%; background-color: blueviolet;">
+<div style="float: left; width: 60%; background-color: antiquewhite">
   <h2>Choose your room</h2>
 
   <!--deluxe room-->
@@ -13,7 +13,7 @@
         <div style="float: right; clear: right">
           <div style="float: left; margin-right: 30px">
             <h5>1 night<br/>
-            2 persons</h5>
+          2 Adult 1 Children</h5>
           </div>
           <div style="float: left;">
               <h4>400$</h4>
@@ -33,7 +33,7 @@
         <div style="float: right; clear: right">
           <div style="float: left; margin-right: 30px">
             <h5>1 night<br/>
-            2 persons</h5>
+              2 Adult 1 Children</h5>
           </div>
           <div style="float: left;">
               <h4>200$</h4>
@@ -54,7 +54,7 @@
         <div style="float: right; clear: right">
           <div style="float: left; margin-right: 30px">
             <h5>1 night<br/>
-            2 persons</h5>
+              2 Adult 1 Children</h5>
           </div>
           <div style="float: left;">
               <h4>100$</h4>
@@ -74,7 +74,7 @@
         <div style="float: right; clear: right">
           <div style="float: left; margin-right: 30px">
             <h5>1 night<br/>
-            2 persons</h5>
+              2 Adult 1 Children </h5>
           </div>
           <div style="float: left;">
               <h4>300$</h4>
@@ -87,19 +87,30 @@
 </div>
   </div>
 </div>
-  <div class="right" style="background-color: chartreuse">
+  <div class="right" style="background-color:dodgerblue">
       <div>
       <table>
         <tr style="padding-top: 40px"><th style=" padding-left: 10px; padding-right: 40px"><h3>Total:</h3></th>
-            <td><h3 id="amount">0$</h3></td>
+            <td><h3 id="amount">600$</h3></td>
         </tr>
         </table>
         </div>
         <div style="height: 70px; width: 295px; text-align: center; background-color: blanchedalmond">
-              SELECT ROOM
+          <table>
+            <tr><td>DELUXE</td><td>3 persons</td><td>400$</td></tr>
+            <tr><td></td><td></td><td><a href="#"><p>Remove</p></a></td></tr>
+          </table>
           </div>
+          <p></p>
+          <div style="height: 70px; width: 295px; text-align: center; background-color: blanchedalmond">
+              <button type="button" style="display: none;" id="i">Remove</button>
+            <table>
+                <tr><td>EXECUTIVE</td><td>3 persons</td><td>200$</td></tr>
+                <tr><td></td><td></td><td><a href="#"><p>Remove</p></a></td></tr>
+              </table>
+              </div>
 
           <div>
-              <button class="next"> NEXT</button>
+              <button routerLink="/user/payment" class="next"> NEXT</button>
           </div>
 </div>

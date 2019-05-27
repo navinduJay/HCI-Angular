@@ -53,3 +53,11 @@ h3{
   background-color: dodgerblue;
   color: white;
 }
+
+div {
+  margin-bottom: 10px;
+}
+.divbutton {
+  height: 100px;
+  background: #0000ff;
+}

@@ -10,6 +10,7 @@ export class RoomSearchComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }
