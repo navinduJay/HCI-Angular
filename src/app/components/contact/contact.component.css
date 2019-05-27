@@ -12,6 +12,12 @@
   margin-top: 10%;
 }
 
+.contactBtn {
+  background-color: #25274d !important;
+  color: white;
+  width: 120px;
+}
+
 .form-control {
   border: 1px solid transparent;
   border-radius: 15px;

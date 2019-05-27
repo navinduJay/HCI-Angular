@@ -12,10 +12,22 @@ export class ContactComponent implements OnInit {
 
   ngOnInit() {
     this.contact = this.getContact();
-    document.getElementById("contactBtn").addEventListener("click", contactBtn);
+  }
 
-    function contactBtn() {
-      swal("Thank you for your feedback.", "", "success");
+  onSave() {
+    let fname = (<HTMLInputElement>document.getElementById("fname")).value;
+    let email = (<HTMLInputElement>document.getElementById("email")).value;
+    let comment = (<HTMLInputElement>document.getElementById("comment")).value;
+    if (fname != "" && email != "" && comment != "") {
+      swal("Thank you for your feedback!", "", "success");
+    } else {
+      swal({
+        title: "Please fill all the details!",
+        text: "",
+        icon: "warning",
+        buttons: { cancel: false, confirm: true },
+        dangerMode: true
+      });
     }
   }
 
