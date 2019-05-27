@@ -1,7 +1,7 @@
 export const configuration = {
   footer: {
     title: "Hotel Habibi",
-    copyright: " © 2019 HABIBI Solutions",
+    copyright: " © 2019 Human Computer Interface Project WE-01",
     address: "Visit us at: 77 Galle Rd, Colombo 00300 Sri Lanka"
   },
 
@@ -27,7 +27,7 @@ export const configuration = {
     title: "Contact Us",
     text: "Write your feedback!",
     form: {
-      name: "Full Name",
+      name: "Name",
       email: "Email",
       comment: "Comment",
       btn: "Submit"
@@ -50,25 +50,23 @@ export const configuration = {
         icon: "../../../assets/images/massage.svg",
         title: "Free Jet-lag Massage",
         desc:
-          "This is basic card with image on top, title, description and button."
+          "Decrease the effects of Jet Lag with a Massage. Sit back and try."
       },
       {
         icon: "../../../assets/images/check.svg",
         title: "Early check-in & late check-out",
         desc:
-          "This is basic card with image on top, title, description and button."
+          "This is another amenity we provie for you. Sit back and enjoy more."
       },
       {
         icon: "../../../assets/images/spa.png",
-        title: "25% Off SPA Treatments",
-        desc:
-          "This is basic card with image on top, title, description and button."
+        title: "Offers For SPA Treatments",
+        desc: "Offers for our customers for spa treatments. Enjoy with us."
       },
       {
         icon: "../../../assets/images/dine.svg",
-        title: "10% Off Lunch & Dinner",
-        desc:
-          "This is basic card with image on top, title, description and button."
+        title: "Offers Lunch & Dinner",
+        desc: "Offers for our customers for lunch and dinner. Enjoy with us."
       }
     ]
   },

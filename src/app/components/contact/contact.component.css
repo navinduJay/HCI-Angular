@@ -11,6 +11,11 @@
 .contact-info {
   margin-top: 10%;
 }
+
+.form-control {
+  border: 1px solid transparent;
+  border-radius: 15px;
+}
 .contact-info img {
   margin-bottom: 15%;
 }
