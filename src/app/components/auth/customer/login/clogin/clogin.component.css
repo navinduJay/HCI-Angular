@@ -5,6 +5,7 @@
   
   .example-container > * {
     width: 100%;
+    margin-top: 2%;
   }
   
   input.example-right-align::-webkit-outer-spin-button,
@@ -19,7 +20,7 @@
     padding: 5%;
     border: 1px solid #ced4da;
     border-radius: 1.5rem;
-    margin-top: 2%;
+    /* margin-top: 2%; */
     width: 100%;
     background-color: honeydew;
   }

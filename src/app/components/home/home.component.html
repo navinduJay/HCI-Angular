@@ -1,8 +1,10 @@
 <app-header></app-header>
+<body style="background: white !important;">
 <app-corousel></app-corousel>
-<app-auth></app-auth>
+<app-auth [hidden]="isLogged"></app-auth>
 <app-todo></app-todo>
 <app-check-availability></app-check-availability>
 <app-why-us></app-why-us>
 <app-rooms></app-rooms>
 <app-footer></app-footer>
+</body>

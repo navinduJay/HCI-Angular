@@ -11,6 +11,7 @@ import swal from "sweetalert";
 export class HeaderComponent implements OnInit {
   activetab = "";
   status: string = localStorage.getItem("isLoggedIn");
+  user: string = localStorage.getItem('token');
   constructor(
     private router: Router,
     public authService: AuthenticationService
@@ -25,8 +26,8 @@ export class HeaderComponent implements OnInit {
   }
 
   cLogout(): void {
-    swal("Logged Out", "Successfully logged out", "success");
+    swal("See you again Ravi", "Successfully logged out", "success");
     this.authService.logout();
-    this.router.navigate(["home"]);
+    this.router.navigate(["/user/login"]);
   }
 }

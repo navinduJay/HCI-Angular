@@ -28,7 +28,7 @@ export class CloginComponent implements OnInit {
     private formBuilder: FormBuilder,
     private router: Router,
     public authService: AuthenticationService
-  ) {}
+  ) { }
 
   ngOnInit() {
     this.retUrl = "/home";

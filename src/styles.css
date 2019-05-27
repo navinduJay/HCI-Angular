@@ -5,7 +5,8 @@
 body {
   
   line-height: 1.7;
-  background: white !important;
+  background: url("./assets/images/bg_all.svg") fixed; 
+  background-size: cover;
   width: auto;
   color: rgba(0, 0, 0, 0.5);
   font-weight: 400;
