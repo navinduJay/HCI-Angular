@@ -50,11 +50,14 @@ import { UserAccessDeniedComponent } from "./components/user-access-denied/user-
 import { CheckAvailabilityComponent } from "./components/check-availability/check-availability.component";
 import { OffersComponent } from "./components/offers/offers.component";
 import { InvoiceComponent } from "./components/invoice/invoice.component";
+import { RoomSearchComponent } from './components/reservation/room-search/room-search.component';
+import { HallDetailsComponent } from './components/reservation/hall-details/hall-details.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
   { path: "home", component: HomeComponent },
   { path: "about", component: AboutComponent },
+  { path: "room-list", component: RoomListComponent },
   { path: "admin/login", component: LoginComponent },
   { path: "register", component: RegisterComponent },
   { path: "contact", component: ContactComponent },
@@ -112,11 +115,7 @@ const routes: Routes = [
     canActivate: [AdminAuthenticationGuard],
     data: { animation: "isRight" }
   },
-  {
-    path: "user/reservation/room-list",
-    component: RoomListComponent,
-    canActivate: [AuthenticationGuard]
-  },
+
   {
     path: "user/reservation/room-list/desc",
     component: RoomDescriptionComponent
@@ -257,6 +256,17 @@ const routes: Routes = [
     path: "home/check_availability",
     component: CheckAvailabilityComponent
   },
+
+  {
+    path: "user/room-search",
+    component: RoomSearchComponent
+  },
+
+  {
+    path: "user/halldetails",
+    component: HallDetailsComponent
+  },
+
   { path: "**", component: NotFoundComponent }
 ];
 

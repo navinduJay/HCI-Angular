@@ -84,6 +84,9 @@ import { PreviousReservationsComponent } from './components/auth/customer/profil
 import { UserAccessDeniedComponent } from './components/user-access-denied/user-access-denied.component';
 import { OffersComponent } from './components/offers/offers.component';
 import { InvoiceComponent } from './components/invoice/invoice.component';
+import { RoomTypesBarComponent } from './components/reservation/room-types-bar/room-types-bar.component';
+import { RoomSearchComponent } from './components/reservation/room-search/room-search.component';
+import { HallDetailsComponent } from './components/reservation/hall-details/hall-details.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -151,7 +154,10 @@ import { InvoiceComponent } from './components/invoice/invoice.component';
     PreviousReservationsComponent,
     UserAccessDeniedComponent,
     OffersComponent,
-    InvoiceComponent
+    InvoiceComponent,
+    RoomTypesBarComponent,
+    RoomSearchComponent,
+    HallDetailsComponent
   ],
   imports: [
     BrowserModule,

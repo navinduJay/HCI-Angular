@@ -3,65 +3,49 @@
     <img style="width: 100%; padding-bottom: 30px" src="assets/images/roomsMain.jpg"/>
 </div>
 <div>
+<app-reserve></app-reserve>
+
     <h4 class="title">Rooms types</h4>
   <div  class="r" id="left">
       <div class="img-hover-zoom img-hover-zoom--xyz">
     <img class="photo" src="assets/images/room1.jpg"/></div>
-    <h4 class="text">DELUXE ROOMS</h4>
+    <h4 class="text">DELUXE</h4>
     <p class="text">Experience the next level of luxury with our Deluxe Rooms.</p>
-    <button class="seeMore">See more</button>
+    <a href="user/reservation/room-list/desc"><button class="seeMore">See more</button></a>
 
     <div class="img-hover-zoom img-hover-zoom--xyz">
     <img class="photo" src="assets/images/room4.jpg"/></div>
-      <h4 class="text">HONEYMOON ROOMS</h4>
-      <p class="text">Mmmmm sex.</p>
-      <button class="seeMore">See more</button>
+      <h4 class="text">HONEYMOON SPECIAL</h4>
+      <p class="text">Being situated in the midst of beautiful landscapes..</p>
+      <a href="user/reservation/room-list/honeymoon"><button class="seeMore">See more</button></a>
   </div>
   <div  class="r">
       <div class="img-hover-zoom img-hover-zoom--xyz">
     <img class="photo" src="assets/images/room2.jpg"/></div>
-    <h4 class="text">SUPERIOR ROOMS</h4>
+    <h4 class="text">EXECUTIVE</h4>
     <p class="text">Our Standard HABIBI rooms are far from ‘basic’.</p>
-    <button class="seeMore">See more</button>
+    <a href="user/reservation/room-list/executive"><button class="seeMore">See more</button></a>
 
-    <div class="img-hover-zoom img-hover-zoom--xyz">
-    <img class="photo" src="assets/images/room4.jpg"/></div>
-      <h4 class="text">HONEYMOON ROOMS</h4>
-      <p class="text">Mmmmm sex.</p>
-      <button class="seeMore">See more</button>
   </div>
-  <div class="r" id="#right">
+  <div class="r" id="#right" style="clear: right">
       <div class="img-hover-zoom img-hover-zoom--xyz">
     <img class="photo" src="assets/images/room3.jpg"/></div>
-    <h4 class="text">FAMILY ROOMS</h4>
+    <h4 class="text">STANDARD</h4>
     <p class="text">More comfortable home <br>stay with family.</p>
-    <button class="seeMore">See more</button>
+    <a href="user/reservation/room-list/standard"><button class="seeMore">See more</button></a>
 
-    <div class="img-hover-zoom img-hover-zoom--xyz">
-    <img class="photo" src="assets/images/room4.jpg"/></div>
-      <h4 class="text">HONEYMOON ROOMS</h4>
-      <p class="text">Mmmmm sex.</p>
-      <button class="seeMore">See more</button>
-  </div>
 </div>
 
 <!-- Halls types -->
 
-<div>
+<div style="clear:left ">
     <h4 class="title">Hall types</h4>
   <div  class="r" id="left">
       <div class="img-hover-zoom img-hover-zoom--xyz">
     <img class="photo" src="assets/images/hall1.jpg"/></div>
     <h4 class="text">Party Hall</h4>
     <p class="text">Experience the next level of luxury with our Deluxe Rooms.</p>
-    <button class="seeMore">See more</button>
-
-    <div class="img-hover-zoom img-hover-zoom--xyz">
-    <img class="photo" src="assets/images/hall1.jpg"/></div>
-    <h4 class="text">Party Hall</h4>
-    <p class="text">Experience the next level of luxury with our Deluxe Rooms.</p>
-    <button class="seeMore">See more</button>
-
+    <a routerLink="/user/halldetails"><button class="seeMore">See more</button></a>
 
   </div>
   <div  class="r">
@@ -69,7 +53,7 @@
     <img class="photo" src="assets/images/hall2.jpg"/></div>
     <h4 class="text">Conference Hall</h4>
     <p class="text">Our Standard HABIBI rooms are far from ‘basic’.</p>
-    <button class="seeMore">See more</button>
+    <a routerLink ="/user/halldetails"><button class="seeMore">See more</button></a>
 
   </div>
   <div class="r" id="#right">
@@ -77,7 +61,7 @@
     <img class="photo" src="assets/images/hall3.png"/></div>
     <h4 class="text">Wedding Hall</h4>
     <p class="text">More comfortable home stay with family.</p>
-    <button class="seeMore">See more</button>
+    <a routerLink="/user/halldetails"><button class="seeMore">See more</button></a>
 
   </div>
 </div>

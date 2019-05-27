@@ -1,0 +1,132 @@
+/* slider */
+
+@media (min-width: 768px) {
+
+  /* show 3 items */
+  .carouselPrograms .carousel-inner .active,
+  .carouselPrograms .carousel-inner .active + .carousel-item,
+  .carouselPrograms .carousel-inner .active + .carousel-item + .carousel-item {
+      display: block;
+  }
+
+  .carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+  .carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+      transition: none;
+  }
+
+  .carouselPrograms .carousel-inner .carousel-item-next,
+  .carouselPrograms .carousel-inner .carousel-item-prev {
+      position: relative;
+      transform: translate3d(0, 0, 0);
+  }
+
+  .carouselPrograms .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+      position: absolute;
+      top: 0;
+      right: -33.333%;
+      z-index: -1;
+      /* display: block; */
+      visibility: hidden;
+  }
+
+  /* left or forward direction */
+  .carouselPrograms .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+  .carouselPrograms .carousel-item-next.carousel-item-left + .carousel-item,
+  .carouselPrograms .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+  .carouselPrograms .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+  }
+
+  /* farthest right hidden item must be abso position for animations */
+  .carouselPrograms .carousel-inner .carousel-item-prev.carousel-item-right {
+      position: absolute;
+      top: 0;
+      left: 0%;
+      z-index: -1;
+      display: block;
+      visibility: visible;
+  }
+
+  /* right or prev direction */
+  .carouselPrograms .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+  .carouselPrograms .carousel-item-prev.carousel-item-right + .carousel-item,
+  .carouselPrograms .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+  .carouselPrograms .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+      display: block;
+      visibility: visible;
+  }
+}
+
+/* inside */
+.r{
+  float: left;
+  /* margin: 34px; */
+  /* background-color: beige; */
+  padding: 0px;
+  width: 380px;
+}
+
+.photo{
+  height: 233px;
+  width: 364px;
+  padding-bottom: 10px;
+  padding-top: 0px;
+}
+
+.seeMore{
+  padding: 4px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50;
+}
+
+.seeMore:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+.title{
+  text-align: center;
+}
+
+/* [1] The container */
+.img-hover-zoom {
+  height: 233px;
+  width: 364px; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.1);
+}
+
+/* Zoom-n-rotate Container */
+.img-hover-zoom--zoom-n-rotate img {
+  transition: transform .5s ease-in-out;
+}
+
+/* The Transformation */
+.img-hover-zoom--zoom-n-rotate:hover img {
+  transform: scale(2) rotate(25deg);
+}
