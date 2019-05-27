@@ -44,6 +44,16 @@
       </li>
 
       <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/menu"
+            [class.active]="activetab === 'menu'"
+            (click)="getActiveTab('menu')"
+            >Menu</a
+          >
+        </li>
+
+      <li class="nav-item">
         <a
           class="nav-link"
           routerLink="/contact"

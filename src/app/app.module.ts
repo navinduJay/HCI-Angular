@@ -86,6 +86,7 @@ import { InvoiceComponent } from "./components/invoice/invoice.component";
 import { RoomTypesBarComponent } from "./components/reservation/room-types-bar/room-types-bar.component";
 import { RoomSearchComponent } from "./components/reservation/room-search/room-search.component";
 import { HallDetailsComponent } from "./components/reservation/hall-details/hall-details.component";
+import { CustomerMenuComponent } from './components/customer-menu/customer-menu/customer-menu.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -155,7 +156,8 @@ import { HallDetailsComponent } from "./components/reservation/hall-details/hall
     InvoiceComponent,
     RoomTypesBarComponent,
     RoomSearchComponent,
-    HallDetailsComponent
+    HallDetailsComponent,
+    CustomerMenuComponent
   ],
   imports: [
     BrowserModule,

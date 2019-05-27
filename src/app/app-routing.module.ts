@@ -52,6 +52,7 @@ import { OffersComponent } from "./components/offers/offers.component";
 import { InvoiceComponent } from "./components/invoice/invoice.component";
 import { RoomSearchComponent } from "./components/reservation/room-search/room-search.component";
 import { HallDetailsComponent } from "./components/reservation/hall-details/hall-details.component";
+import { CustomerMenuComponent } from './components/customer-menu/customer-menu/customer-menu.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
@@ -59,6 +60,7 @@ const routes: Routes = [
   { path: "about", component: AboutComponent },
   { path: "room-list", component: RoomListComponent },
   { path: "admin/login", component: LoginComponent },
+  { path: "menu", component: CustomerMenuComponent },
 
   { path: "contact", component: ContactComponent },
 
