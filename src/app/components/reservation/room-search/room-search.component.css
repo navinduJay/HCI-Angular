@@ -1,18 +1,18 @@
-.right{
+.right {
   /* margin-left:800px; */
-  background-color:dodgerblue;
+  background-color: dodgerblue;
   height: 300px;
-  width:300px;
+  width: 300px;
   /* position: fixed;
   margin-top: 0%; */
   float: left;
 }
 
-h3{
+h3 {
   color: white;
 }
 
-.next{
+.next {
   width: 295px;
   padding: 4px 32px;
   text-align: center;
@@ -25,15 +25,16 @@ h3{
   cursor: pointer;
   background-color: white;
   color: black;
-  border: 2px solid #4CAF50;
+  border: 2px solid #4caf50;
+  border-radius: 10px;
 }
 
 .next:hover {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
 }
 
-.select{
+.select {
   width: 295px;
   padding: 4px 32px;
   text-align: center;
@@ -46,7 +47,7 @@ h3{
   cursor: pointer;
   background-color: white;
   color: black;
-  border: 2px solid #4CAF50;
+  border: 2px solid #4caf50;
 }
 
 .select:hover {
