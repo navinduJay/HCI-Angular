@@ -11,16 +11,20 @@ export class AdminRoomsComponent implements OnInit {
   ngOnInit() {
     document.getElementById("editBtn").addEventListener("click", editBtn);
     document.getElementById("deleteBtn").addEventListener("click", deleteBtn);
+    document.getElementById("addAmenities").addEventListener("click", addBtn);
 
     function editBtn() {
       swal("Room successfully updated!", "", "success");
     }
 
+    function addBtn() {
+      swal("Room added successfully!", "", "success");
+    }
+
     function deleteBtn() {
       swal({
-        title: "Are you sure?",
-        text:
-          "Once deleted, you will not be able to recover this imaginary file!",
+        title: "Are you sure you want to delete?",
+        text: "",
         icon: "warning",
         buttons: { cancel: true, confirm: true },
         dangerMode: true

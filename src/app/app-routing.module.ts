@@ -232,7 +232,8 @@ const routes: Routes = [
   {
     path: "user/payment",
     component: CusPaymentComponent,
-    data: { animation: "isRight" }
+    data: { animation: "isRight" },
+    canActivate: [AuthenticationGuard]
   },
   {
     path: "access",
@@ -245,7 +246,8 @@ const routes: Routes = [
   },
   {
     path: "user/payment/invoice",
-    component: InvoiceComponent
+    component: InvoiceComponent,
+    canActivate: [AuthenticationGuard]
   },
   {
     path: "access_denied",
@@ -254,7 +256,8 @@ const routes: Routes = [
   {
     path: "user/payment/offers",
     component: OffersComponent,
-    data: { animation: "isLeft" }
+    data: { animation: "isLeft" },
+    canActivate: [AuthenticationGuard]
   },
   {
     path: "home/check_availability",
