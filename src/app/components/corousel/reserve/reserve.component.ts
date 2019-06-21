@@ -1,4 +1,6 @@
 import { Component, OnInit } from "@angular/core";
+import { toInteger } from '@ng-bootstrap/ng-bootstrap/util/util';
+import swal from 'sweetalert';
 
 @Component({
   selector: "app-reserve",
@@ -8,5 +10,8 @@ import { Component, OnInit } from "@angular/core";
 export class ReserveComponent implements OnInit {
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+
+
+  }
 }

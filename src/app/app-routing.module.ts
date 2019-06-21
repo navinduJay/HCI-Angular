@@ -232,8 +232,7 @@ const routes: Routes = [
   {
     path: "user/payment",
     component: CusPaymentComponent,
-    data: { animation: "isRight" },
-    canActivate: [AuthenticationGuard]
+
   },
   {
     path: "access",

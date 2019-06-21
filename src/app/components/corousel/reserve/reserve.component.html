@@ -32,7 +32,7 @@
                   class="icons"
                 />
               </div>
-              <input type="date" class="form-control checkIn" />
+              <input id="date" type="date" class="form-control checkIn" />
             </div>
           </div>
           <div class="col-md-3 mb-3 mb-sm-0 col-sm-3">
@@ -54,13 +54,13 @@
             <div class="row">
               <div class="col-md-4 mb-3 mb-md-0">
                 <label for="children" class="font-weight-bold text-black"
-                  >Children</label
+                  >Adults</label
                 >
                 <div class="field-icon-wrap">
                   <div class="icon">
                     <span class="ion-ios-arrow-down"></span>
                   </div>
-                  <select name="" id="children" class="form-control">
+                  <select name="" id="adults" class="form-control">
                     <option value="">1</option>
                     <option value="">2</option>
                     <option value="">3</option>
@@ -84,6 +84,7 @@
               </div>
               <div class="col-md-4 mb-3 mb-md-0">
                 <a
+                  id="book"
                   type="button"
                   routerLink="/user/room-search"
                   class="btn btn-dark btn-block text-white"
